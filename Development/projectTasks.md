@@ -16,9 +16,9 @@
 - [ ] Unit tests for creating a user profile
 
 ## Edit profile page
+- [ ] JSP to display editable user profile page
 - [ ] Edit user account properties: first name, last name, etc.
 - [ ] Update database query
-- [ ] 
 
 ## Pickup schedule page
 - [ ] Pickup schedule JSP
