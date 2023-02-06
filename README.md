@@ -14,5 +14,10 @@ By signing up, users can take advantage of serveral features:
 ## Description
 
 ## Technologies
-
-
+- IntelliJ IDEA
+- Database: MySQL 8.0.31
+- Dependency management: Maven
+- CSS: Bootstrap
+- Logging: Log4J2
+- Hosting: TBD
+- Unit Testing: JUnit
