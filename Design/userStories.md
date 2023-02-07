@@ -1,5 +1,8 @@
 # User Stories
 
+## Update technologies
+As a user, I want to verify that I have all the necessary dependencies for my project.[MVP]
+
 ## Create Compost Collectors database
 As a user, I want to have access to the compost collectors database [MVP]
 
