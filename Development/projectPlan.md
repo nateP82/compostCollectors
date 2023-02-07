@@ -58,7 +58,7 @@
 - [ ] Placeholder for rescheduled work
 
 # Week 15
--[ ] Refactoring and catch up
+- [ ] Refactoring and catch up
 
 # Week 16
 - [ ] Wrap up individual project for presentation
