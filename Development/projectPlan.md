@@ -39,6 +39,7 @@
 - [ ] Refactor based on project checkpoint feedback
 - [ ] Create pickup schedule page
 - [ ] Start work on pickup request form page
+- [ ] Start work on request form for a new or replacement compost bin
 
 ## Week 11 
 - [ ] Create user contributions page
