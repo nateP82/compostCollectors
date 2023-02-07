@@ -13,7 +13,7 @@
 - [ ] Verify project configuration for deployment to Tomcat
  
 ## Week 6
--[ ] Create Database
+- [ ] Create Database
 - [ ] Add users table
 - [ ] Setup database connection details
 - [ ] DAO created with full CRUD capabilities
