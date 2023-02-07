@@ -1,5 +1,10 @@
 # Project tasks
 
+## Create Database
+- [ ] Setup database in MySQL
+- [ ] Verify database connection
+- [ ] Add mock data: users
+
 ## User sign in
 - [ ] Create sign in form
 - [ ] Create User

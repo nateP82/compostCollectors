@@ -1,7 +1,7 @@
 # User Stories
 
 ## Create Compost Collectors database
-As a user, I want to have access to the compost collectors database
+As a user, I want to have access to the compost collectors database [MVP]
 
 ## Create Account
 As a new user to the compost collectors site, I want to be able to sign up for a new account to use the available services on the site. [MVP]
