@@ -27,6 +27,9 @@ As a user, I want to be able to view the current pickup schedule. [MVP]
 ## Schedule a pickup 
 As a user, I want to be able to fill out a form to request a specific pickup date. [MVP]
 
+## Request a compost bin
+As a user, I want to be able to submit a form to request a compost bucket, or a replacement bucket [MVP]
+
 ## View acceptable materials list
 As a user, I want to view a list of materials both acceptable and non-acceptable. 
 

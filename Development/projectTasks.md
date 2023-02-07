@@ -44,3 +44,4 @@
 - [ ] JSP page for selecting a pickup time
 - [ ] Servlet for scheduling pickup
 - [ ] Form to submit a request for pickup
+- [ ] Form to submit a request for a compost bin
