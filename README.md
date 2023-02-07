@@ -8,6 +8,7 @@ By signing up, users can take advantage of serveral features:
 
 - A user account with data about your composting contributions to date
 - View sheduled pickup times
+- Request a compost storage bin
 - Request a pickup: If you missed a pickup you can submit a form to schedule an extra pickup
 - Find information about what can and cannot be composted
 
