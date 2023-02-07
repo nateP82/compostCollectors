@@ -1,5 +1,5 @@
 # Compost Collectors
-Repo for the compost collection site
+Connecting professional composters with the community to help reduce waste and educate users about the benefits of composting. 
 
 ## Problem Statment
 Composting is a great way to reduce waste and keep the environment clean. However, you may not have the space or the time to set up a composting site. You might not have all the necessary tools to start a compost site. You may not know what can and what cannot be composted. Compost collectors looks to help users start this process by providing a hassle-free pickup service, and a way to store your compost before pickup.
