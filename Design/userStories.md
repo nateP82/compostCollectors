@@ -1,7 +1,7 @@
 # User Stories
 
 ## Update technologies
-As a user, I want to verify that I have all the necessary dependencies for my project.[MVP]
+As a user, I want to verify that I have all the necessary dependencies for my project.
 
 ## Create Compost Collectors database
 As a user, I want to have access to the compost collectors database [MVP]
@@ -16,7 +16,7 @@ As a registered user, I want to be able to successfully sign in/out of my accoun
 As a user, I want to be able to see my account information. [MVP]
 
 ## Edit profile
-As a user, I want to be able to edit my profile information at any time. [MVP]
+As a user, I want to be able to edit my profile information at any time. [Stretch Goal]
 
 ## View user collection statistics
 As a user, I want to view a personalized chart on my compost contributions [MVP]
