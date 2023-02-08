@@ -11,10 +11,10 @@
 
 ## Access site features
 - Users can navigate the site to: 
-  - Access their account informaiton
-  - Request a scheduled pickup
-  - Request a new compost bin or request a replacement bin
-  - View their user contributions to date. Connect to API to create data
+  - Access their account informaiton, displayed as  JSP
+  - Request a scheduled pickup JSP page with date/time picker
+  - Request a new compost bin or request a replacement bin via JSP page with form
+  - View their user contributions to date. Connect to API to create data, display on JSP page
 
 ## View Account information
 - JSP that displays user account informaiton
