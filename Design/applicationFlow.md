@@ -5,7 +5,7 @@
 - User is created, successfully added to the database
 
 ## Sign in
-- If user has an account they can click the sign-in button to sign into account
+- If user has an account they can click the sign-in button to sign in
 - Sign in success message
 - If sign in fails, they will see an error displayed on the page
 
@@ -38,7 +38,9 @@
 - Integrated API for displaying data is consumed and JSP displays the output
 
 ## Contact us 
-- Users can submit a form with questions via a contact us link
+- JSP page where Users can submit a form with questions via a contact us link
+- Calls servlet via action in the form to store customer message in database
 
 ## View information about accepted materials
 - Users can navigate to a JSP with informaiton about accepted materials
+- JSP page with information about what can and cannot be composted
