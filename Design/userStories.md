@@ -35,3 +35,6 @@ As a user, I want to view a list of materials both acceptable and non-acceptable
 
 ## About page
 As a user, I want to view an about page for more details about Compost Collectors
+
+## Contact Us
+As a user, I want to be able to contact the compost collectors via a form

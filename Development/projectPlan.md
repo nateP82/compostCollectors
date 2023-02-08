@@ -47,6 +47,7 @@
 
 ## Week 12
 - [ ] Create Acceptable materials page
+- [ ] Create Contact Us page
 - [ ] Unit test coverage update
 
 ## Week 13
