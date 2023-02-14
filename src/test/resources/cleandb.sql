@@ -1,0 +1,2 @@
+delete FROM user;
+INSERT INTO user VALUES (1,'Joe','Coyne','jcoyne','jycone@mailinator.com','supersecret1','1234 street','10'),(2,'Fred','Hensen','fhensen','fhensen@mailinator.com','supersecret2','4567 street','15'),(3,'Barney','Curry','bcurry','bcurry@mailinator.com','supersecret3','8910 street','20'),(4,'Karen','Mack','kmack','kmack@mailinator.com','supersecret4','1123 street','25'),(5,'Dianne','Klein','dklein','dklein@mailinator.com','supersecret5','1223 street','30'),(6,'Dawn','Tillman','dtillman','dtilman@mailinator.com','supersecret6','1323 street','35');
