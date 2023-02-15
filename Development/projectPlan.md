@@ -1,11 +1,11 @@
 # Project Roadmap
 
 ## Week 4 
-- [ ] Update problem statement
-- [ ] Finish project roadmap
-- [ ] Add user stories
-- [ ] Add screen designs
-- [ ] Update reflection statement
+- [x] Update problem statement
+- [x] Finish project roadmap
+- [x] Add user stories
+- [x] Add screen designs
+- [x] Update reflection statement
 
 ## Week 5
 - [ ] Refactoring based on project checkpoint feedback
