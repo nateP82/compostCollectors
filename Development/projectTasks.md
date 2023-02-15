@@ -1,7 +1,7 @@
 # Project tasks
 
 ## Create Database
-- [x] Setup database in MySQL
+- [x] Setup test and "production" databases in MySQL
 - [x] Verify database connection
 - [x] Add mock data: users
 
