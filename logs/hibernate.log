@@ -1,0 +1,828 @@
+[DEBUG] 2023-02-20 14:43:21.046 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2023-02-20 14:43:21.052 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2023-02-20 14:43:21.055 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[TRACE] 2023-02-20 14:43:21.066 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+[TRACE] 2023-02-20 14:43:21.066 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+[TRACE] 2023-02-20 14:43:21.067 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+[TRACE] 2023-02-20 14:43:21.067 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+[TRACE] 2023-02-20 14:43:21.068 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390V8] -> [org.hibernate.dialect.DB2390V8Dialect]
+[TRACE] 2023-02-20 14:43:21.068 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+[TRACE] 2023-02-20 14:43:21.069 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+[TRACE] 2023-02-20 14:43:21.069 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+[TRACE] 2023-02-20 14:43:21.069 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+[TRACE] 2023-02-20 14:43:21.070 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+[TRACE] 2023-02-20 14:43:21.070 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+[TRACE] 2023-02-20 14:43:21.071 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+[TRACE] 2023-02-20 14:43:21.072 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANAColumnStore] -> [org.hibernate.dialect.HANAColumnStoreDialect]
+[TRACE] 2023-02-20 14:43:21.072 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANARowStore] -> [org.hibernate.dialect.HANARowStoreDialect]
+[TRACE] 2023-02-20 14:43:21.073 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+[TRACE] 2023-02-20 14:43:21.073 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+[TRACE] 2023-02-20 14:43:21.074 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+[TRACE] 2023-02-20 14:43:21.074 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+[TRACE] 2023-02-20 14:43:21.075 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+[TRACE] 2023-02-20 14:43:21.075 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+[TRACE] 2023-02-20 14:43:21.075 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+[TRACE] 2023-02-20 14:43:21.076 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+[TRACE] 2023-02-20 14:43:21.076 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+[TRACE] 2023-02-20 14:43:21.077 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+[TRACE] 2023-02-20 14:43:21.077 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+[TRACE] 2023-02-20 14:43:21.077 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+[TRACE] 2023-02-20 14:43:21.078 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+[TRACE] 2023-02-20 14:43:21.079 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL8] -> [org.hibernate.dialect.MySQL8Dialect]
+[TRACE] 2023-02-20 14:43:21.080 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+[TRACE] 2023-02-20 14:43:21.081 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+[TRACE] 2023-02-20 14:43:21.081 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+[TRACE] 2023-02-20 14:43:21.082 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+[TRACE] 2023-02-20 14:43:21.083 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+[TRACE] 2023-02-20 14:43:21.083 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+[TRACE] 2023-02-20 14:43:21.083 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+[TRACE] 2023-02-20 14:43:21.083 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+[TRACE] 2023-02-20 14:43:21.083 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+[TRACE] 2023-02-20 14:43:21.084 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+[TRACE] 2023-02-20 14:43:21.084 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+[TRACE] 2023-02-20 14:43:21.085 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+[TRACE] 2023-02-20 14:43:21.085 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+[TRACE] 2023-02-20 14:43:21.086 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+[TRACE] 2023-02-20 14:43:21.086 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+[TRACE] 2023-02-20 14:43:21.086 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+[TRACE] 2023-02-20 14:43:21.087 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+[TRACE] 2023-02-20 14:43:21.087 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+[TRACE] 2023-02-20 14:43:21.088 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+[TRACE] 2023-02-20 14:43:21.089 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Atomikos] -> [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.089 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.AtomikosJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.089 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.089 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.090 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.090 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.090 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.090 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.091 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.091 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.091 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.091 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.092 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.092 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.092 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+[TRACE] 2023-02-20 14:43:21.092 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+[TRACE] 2023-02-20 14:43:21.092 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.092 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.093 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.093 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.093 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.093 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.093 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SapNetWeaver] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.094 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SapNetWeaverJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.094 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.094 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.095 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.095 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.096 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereLiberty] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.096 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereLibertyJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.097 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.097 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.097 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.097 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+[TRACE] 2023-02-20 14:43:21.098 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+[TRACE] 2023-02-20 14:43:21.098 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+[TRACE] 2023-02-20 14:43:21.098 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+[TRACE] 2023-02-20 14:43:21.099 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+[TRACE] 2023-02-20 14:43:21.099 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+[TRACE] 2023-02-20 14:43:21.100 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+[TRACE] 2023-02-20 14:43:21.100 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+[TRACE] 2023-02-20 14:43:21.100 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+[TRACE] 2023-02-20 14:43:21.101 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+[TRACE] 2023-02-20 14:43:21.101 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+[TRACE] 2023-02-20 14:43:21.102 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+[TRACE] 2023-02-20 14:43:21.102 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+[TRACE] 2023-02-20 14:43:21.102 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+[TRACE] 2023-02-20 14:43:21.103 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+[TRACE] 2023-02-20 14:43:21.103 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+[TRACE] 2023-02-20 14:43:21.107 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.jdbc.connections.spi.ConnectionProvider] : [c3p0] -> [org.hibernate.c3p0.internal.C3P0ConnectionProvider]
+[TRACE] 2023-02-20 14:43:21.108 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.jdbc.connections.spi.ConnectionProvider] : [C3P0ConnectionProvider] -> [org.hibernate.c3p0.internal.C3P0ConnectionProvider]
+[TRACE] 2023-02-20 14:43:21.108 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.jdbc.connections.spi.ConnectionProvider] : [org.hibernate.connection.C3P0ConnectionProvider] -> [org.hibernate.c3p0.internal.C3P0ConnectionProvider]
+[TRACE] 2023-02-20 14:43:21.108 [main] StrategySelectorImpl - Registering named strategy selector [org.hibernate.engine.jdbc.connections.spi.ConnectionProvider] : [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider] -> [org.hibernate.c3p0.internal.C3P0ConnectionProvider]
+[INFO ] 2023-02-20 14:43:21.131 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2023-02-20 14:43:21.133 [main] Environment - HHH000206: hibernate.properties not found
+[TRACE] 2023-02-20 14:43:21.241 [main] ClassLoaderServiceImpl - trying via [new URL("hibernate.cfg.xml")]
+[TRACE] 2023-02-20 14:43:21.241 [main] ClassLoaderServiceImpl - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+[TRACE] 2023-02-20 14:43:21.291 [main] LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Configuration DTD//EN, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+[DEBUG] 2023-02-20 14:43:21.292 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2023-02-20 14:43:21.292 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2023-02-20 14:43:21.298 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2023-02-20 14:43:21.508 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[TRACE] 2023-02-20 14:43:21.519 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+[TRACE] 2023-02-20 14:43:21.526 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+[DEBUG] 2023-02-20 14:43:21.527 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2023-02-20 14:43:21.527 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2023-02-20 14:43:21.543 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2023-02-20 14:43:21.581 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@746b18fd
+[DEBUG] 2023-02-20 14:43:21.582 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@746b18fd
+[DEBUG] 2023-02-20 14:43:21.582 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@746b18fd
+[DEBUG] 2023-02-20 14:43:21.582 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2df3c564
+[DEBUG] 2023-02-20 14:43:21.583 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@62e7dffa
+[DEBUG] 2023-02-20 14:43:21.583 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@b8a7e43
+[DEBUG] 2023-02-20 14:43:21.584 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5e8604bf
+[DEBUG] 2023-02-20 14:43:21.584 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5e8604bf
+[DEBUG] 2023-02-20 14:43:21.584 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5e8604bf
+[DEBUG] 2023-02-20 14:43:21.585 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@546621c4
+[DEBUG] 2023-02-20 14:43:21.585 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@546621c4
+[DEBUG] 2023-02-20 14:43:21.585 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@546621c4
+[DEBUG] 2023-02-20 14:43:21.586 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@7e9da981
+[DEBUG] 2023-02-20 14:43:21.586 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@7e9da981
+[DEBUG] 2023-02-20 14:43:21.586 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7e9da981
+[DEBUG] 2023-02-20 14:43:21.587 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@476a736d
+[DEBUG] 2023-02-20 14:43:21.587 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@476a736d
+[DEBUG] 2023-02-20 14:43:21.587 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@476a736d
+[DEBUG] 2023-02-20 14:43:21.588 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@576c5536
+[DEBUG] 2023-02-20 14:43:21.588 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@576c5536
+[DEBUG] 2023-02-20 14:43:21.588 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@576c5536
+[DEBUG] 2023-02-20 14:43:21.588 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@159a48a6
+[DEBUG] 2023-02-20 14:43:21.589 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@159a48a6
+[DEBUG] 2023-02-20 14:43:21.589 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@159a48a6
+[DEBUG] 2023-02-20 14:43:21.589 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3cbcd8f3
+[DEBUG] 2023-02-20 14:43:21.589 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3cbcd8f3
+[DEBUG] 2023-02-20 14:43:21.589 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3cbcd8f3
+[DEBUG] 2023-02-20 14:43:21.590 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7ec25216
+[DEBUG] 2023-02-20 14:43:21.590 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7ec25216
+[DEBUG] 2023-02-20 14:43:21.591 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@705f83a7
+[DEBUG] 2023-02-20 14:43:21.591 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@705f83a7
+[DEBUG] 2023-02-20 14:43:21.591 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@2679311f
+[DEBUG] 2023-02-20 14:43:21.591 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@2679311f
+[DEBUG] 2023-02-20 14:43:21.592 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@44cb460e
+[DEBUG] 2023-02-20 14:43:21.592 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3051e0b2
+[DEBUG] 2023-02-20 14:43:21.593 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@2d5f7182
+[DEBUG] 2023-02-20 14:43:21.593 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@2d5f7182
+[DEBUG] 2023-02-20 14:43:21.593 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@8ed9cf
+[DEBUG] 2023-02-20 14:43:21.594 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@8ed9cf
+[DEBUG] 2023-02-20 14:43:21.602 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@ec1b2e4
+[DEBUG] 2023-02-20 14:43:21.603 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@ec1b2e4
+[DEBUG] 2023-02-20 14:43:21.604 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4f8b4bd0
+[DEBUG] 2023-02-20 14:43:21.604 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4f8b4bd0
+[DEBUG] 2023-02-20 14:43:21.605 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7bbbb6a8
+[DEBUG] 2023-02-20 14:43:21.605 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7bbbb6a8
+[DEBUG] 2023-02-20 14:43:21.606 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@314ed053
+[DEBUG] 2023-02-20 14:43:21.606 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@314ed053
+[DEBUG] 2023-02-20 14:43:21.607 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@dca2615
+[DEBUG] 2023-02-20 14:43:21.608 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@dca2615
+[DEBUG] 2023-02-20 14:43:21.609 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1d96d872
+[DEBUG] 2023-02-20 14:43:21.609 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1d96d872
+[DEBUG] 2023-02-20 14:43:21.611 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@236134a1
+[DEBUG] 2023-02-20 14:43:21.611 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@236134a1
+[DEBUG] 2023-02-20 14:43:21.613 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@3162743f
+[DEBUG] 2023-02-20 14:43:21.613 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3162743f
+[DEBUG] 2023-02-20 14:43:21.614 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@47547132
+[DEBUG] 2023-02-20 14:43:21.614 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@47547132
+[DEBUG] 2023-02-20 14:43:21.615 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@21a66d45
+[DEBUG] 2023-02-20 14:43:21.616 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@21a66d45
+[DEBUG] 2023-02-20 14:43:21.616 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@21a66d45
+[DEBUG] 2023-02-20 14:43:21.617 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@66f659e6
+[DEBUG] 2023-02-20 14:43:21.618 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6e57b5e9
+[DEBUG] 2023-02-20 14:43:21.618 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6e57b5e9
+[DEBUG] 2023-02-20 14:43:21.618 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6e57b5e9
+[DEBUG] 2023-02-20 14:43:21.619 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@971e903
+[DEBUG] 2023-02-20 14:43:21.620 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@c6a6c1d
+[DEBUG] 2023-02-20 14:43:21.620 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@c6a6c1d
+[DEBUG] 2023-02-20 14:43:21.621 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@6e0cff20
+[DEBUG] 2023-02-20 14:43:21.621 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6e0cff20
+[DEBUG] 2023-02-20 14:43:21.621 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@66bacdbc
+[DEBUG] 2023-02-20 14:43:21.621 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@66bacdbc
+[DEBUG] 2023-02-20 14:43:21.622 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@44de94c3
+[DEBUG] 2023-02-20 14:43:21.622 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@44de94c3
+[DEBUG] 2023-02-20 14:43:21.623 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1f387978
+[DEBUG] 2023-02-20 14:43:21.623 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1f387978
+[DEBUG] 2023-02-20 14:43:21.623 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@62b969c4
+[DEBUG] 2023-02-20 14:43:21.624 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@776802b0
+[DEBUG] 2023-02-20 14:43:21.624 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@776802b0
+[DEBUG] 2023-02-20 14:43:21.624 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@776802b0
+[DEBUG] 2023-02-20 14:43:21.625 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@14f3c6fc
+[DEBUG] 2023-02-20 14:43:21.625 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@14f3c6fc
+[DEBUG] 2023-02-20 14:43:21.625 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@14f3c6fc
+[DEBUG] 2023-02-20 14:43:21.626 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@14bf57b2
+[DEBUG] 2023-02-20 14:43:21.626 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@17740dae
+[DEBUG] 2023-02-20 14:43:21.627 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5c82cd4f
+[DEBUG] 2023-02-20 14:43:21.627 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5c82cd4f
+[DEBUG] 2023-02-20 14:43:21.628 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5c82cd4f
+[DEBUG] 2023-02-20 14:43:21.630 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2b61a019
+[DEBUG] 2023-02-20 14:43:21.630 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2b61a019
+[DEBUG] 2023-02-20 14:43:21.630 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2b61a019
+[DEBUG] 2023-02-20 14:43:21.630 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@6fd5717c
+[DEBUG] 2023-02-20 14:43:21.631 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@53ac845a
+[DEBUG] 2023-02-20 14:43:21.632 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@69da0b12
+[DEBUG] 2023-02-20 14:43:21.632 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@69da0b12
+[DEBUG] 2023-02-20 14:43:21.632 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@79b08632
+[DEBUG] 2023-02-20 14:43:21.633 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4393593c
+[DEBUG] 2023-02-20 14:43:21.633 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4393593c
+[DEBUG] 2023-02-20 14:43:21.634 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@5ff60a8c
+[DEBUG] 2023-02-20 14:43:21.634 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5ff60a8c
+[DEBUG] 2023-02-20 14:43:21.634 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@889d9e8
+[DEBUG] 2023-02-20 14:43:21.634 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@acf859d
+[DEBUG] 2023-02-20 14:43:21.635 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@3910fe11
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@b10a26d
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@b10a26d
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@31464a43
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7f8633ae
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@68c87fc3
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@bc0f53b
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@8d7b252
+[DEBUG] 2023-02-20 14:43:21.638 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4682eba5
+[DEBUG] 2023-02-20 14:43:21.639 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6d9fb2d1
+[DEBUG] 2023-02-20 14:43:21.639 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@61fafb74
+[TRACE] 2023-02-20 14:43:21.648 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+[TRACE] 2023-02-20 14:43:21.660 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+[DEBUG] 2023-02-20 14:43:21.662 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2023-02-20 14:43:21.663 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2023-02-20 14:43:21.663 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2023-02-20 14:43:21.664 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2023-02-20 14:43:21.664 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2023-02-20 14:43:21.665 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2023-02-20 14:43:21.665 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2023-02-20 14:43:21.666 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2023-02-20 14:43:21.666 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2023-02-20 14:43:21.667 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2023-02-20 14:43:21.667 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2023-02-20 14:43:21.667 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2023-02-20 14:43:21.667 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2023-02-20 14:43:21.668 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[TRACE] 2023-02-20 14:43:21.668 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[TRACE] 2023-02-20 14:43:21.669 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+[TRACE] 2023-02-20 14:43:21.669 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+[TRACE] 2023-02-20 14:43:21.671 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+[INFO ] 2023-02-20 14:43:21.673 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_CompostCollectors
+[INFO ] 2023-02-20 14:43:21.673 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2023-02-20 14:43:21.674 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2023-02-20 14:43:21.769 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2023-02-20 14:43:22.168 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.32
+      major : 8
+      minor : 0
+[DEBUG] 2023-02-20 14:43:22.169 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2023-02-20 14:43:22.169 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2023-02-20 14:43:22.184 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2023-02-20 14:43:22.198 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2023-02-20 14:43:22.218 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[TRACE] 2023-02-20 14:43:22.235 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [test_CompostCollectors]
+[TRACE] 2023-02-20 14:43:22.235 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [null]
+[TRACE] 2023-02-20 14:43:22.243 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+[DEBUG] 2023-02-20 14:43:22.246 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2023-02-20 14:43:22.248 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5d43409a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@38d17d80]
+[DEBUG] 2023-02-20 14:43:22.288 [main] AnnotationBinder - Binding entity from annotated class: com.compostcollectors.entity.User
+[TRACE] 2023-02-20 14:43:22.306 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [DTYPE]
+[DEBUG] 2023-02-20 14:43:22.307 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2023-02-20 14:43:22.310 [main] EntityBinder - Import with entity name User
+[TRACE] 2023-02-20 14:43:22.310 [main] InFlightMetadataCollectorImpl - Import: User -> com.compostcollectors.entity.User
+[TRACE] 2023-02-20 14:43:22.311 [main] InFlightMetadataCollectorImpl - Import: com.compostcollectors.entity.User -> com.compostcollectors.entity.User
+[TRACE] 2023-02-20 14:43:22.312 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [user]
+[TRACE] 2023-02-20 14:43:22.312 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [user]
+[DEBUG] 2023-02-20 14:43:22.314 [main] EntityBinder - Bind entity com.compostcollectors.entity.User on table user
+[TRACE] 2023-02-20 14:43:22.328 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.id
+[TRACE] 2023-02-20 14:43:22.332 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+[TRACE] 2023-02-20 14:43:22.332 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+[DEBUG] 2023-02-20 14:43:22.332 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.334 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2023-02-20 14:43:22.336 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:id]
+[DEBUG] 2023-02-20 14:43:22.337 [main] SimpleValueBinder - building SimpleValue for id
+[TRACE] 2023-02-20 14:43:22.338 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+[TRACE] 2023-02-20 14:43:22.338 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+[TRACE] 2023-02-20 14:43:22.338 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+[DEBUG] 2023-02-20 14:43:22.339 [main] PropertyBinder - Building property id
+[TRACE] 2023-02-20 14:43:22.341 [main] PropertyBinder - Cascading id with null
+[TRACE] 2023-02-20 14:43:22.341 [main] AnnotationBinder - Add generic generator with name: native
+[DEBUG] 2023-02-20 14:43:22.342 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[TRACE] 2023-02-20 14:43:22.343 [main] AnnotationBinder - Bind @Id on id
+[TRACE] 2023-02-20 14:43:22.343 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.address
+[TRACE] 2023-02-20 14:43:22.343 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [address]
+[TRACE] 2023-02-20 14:43:22.343 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [address]
+[DEBUG] 2023-02-20 14:43:22.343 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=address, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.343 [main] PropertyBinder - MetadataSourceProcessor property address with lazy=false
+[DEBUG] 2023-02-20 14:43:22.343 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:address]
+[DEBUG] 2023-02-20 14:43:22.343 [main] SimpleValueBinder - building SimpleValue for address
+[TRACE] 2023-02-20 14:43:22.344 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [address]
+[TRACE] 2023-02-20 14:43:22.344 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [address]
+[TRACE] 2023-02-20 14:43:22.344 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [address]
+[DEBUG] 2023-02-20 14:43:22.344 [main] PropertyBinder - Building property address
+[TRACE] 2023-02-20 14:43:22.344 [main] PropertyBinder - Cascading address with null
+[TRACE] 2023-02-20 14:43:22.344 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.binWeight
+[TRACE] 2023-02-20 14:43:22.344 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [bin_weight]
+[TRACE] 2023-02-20 14:43:22.344 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [bin_weight]
+[DEBUG] 2023-02-20 14:43:22.344 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=bin_weight, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.344 [main] PropertyBinder - MetadataSourceProcessor property binWeight with lazy=false
+[DEBUG] 2023-02-20 14:43:22.344 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:binWeight]
+[DEBUG] 2023-02-20 14:43:22.344 [main] SimpleValueBinder - building SimpleValue for binWeight
+[TRACE] 2023-02-20 14:43:22.345 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [bin_weight]
+[DEBUG] 2023-02-20 14:43:22.345 [main] PropertyBinder - Building property binWeight
+[TRACE] 2023-02-20 14:43:22.345 [main] PropertyBinder - Cascading binWeight with null
+[TRACE] 2023-02-20 14:43:22.345 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.email
+[TRACE] 2023-02-20 14:43:22.345 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+[TRACE] 2023-02-20 14:43:22.345 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+[DEBUG] 2023-02-20 14:43:22.346 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.346 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2023-02-20 14:43:22.346 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:email]
+[DEBUG] 2023-02-20 14:43:22.346 [main] SimpleValueBinder - building SimpleValue for email
+[TRACE] 2023-02-20 14:43:22.346 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+[TRACE] 2023-02-20 14:43:22.346 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+[TRACE] 2023-02-20 14:43:22.346 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+[DEBUG] 2023-02-20 14:43:22.346 [main] PropertyBinder - Building property email
+[TRACE] 2023-02-20 14:43:22.346 [main] PropertyBinder - Cascading email with null
+[TRACE] 2023-02-20 14:43:22.346 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.firstName
+[TRACE] 2023-02-20 14:43:22.346 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [first_name]
+[TRACE] 2023-02-20 14:43:22.346 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [first_name]
+[DEBUG] 2023-02-20 14:43:22.346 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.346 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2023-02-20 14:43:22.347 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:firstName]
+[DEBUG] 2023-02-20 14:43:22.347 [main] SimpleValueBinder - building SimpleValue for firstName
+[TRACE] 2023-02-20 14:43:22.347 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [first_name]
+[DEBUG] 2023-02-20 14:43:22.347 [main] PropertyBinder - Building property firstName
+[TRACE] 2023-02-20 14:43:22.347 [main] PropertyBinder - Cascading firstName with null
+[TRACE] 2023-02-20 14:43:22.347 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.lastName
+[TRACE] 2023-02-20 14:43:22.347 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [last_name]
+[TRACE] 2023-02-20 14:43:22.347 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [last_name]
+[DEBUG] 2023-02-20 14:43:22.347 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.347 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2023-02-20 14:43:22.347 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:lastName]
+[DEBUG] 2023-02-20 14:43:22.347 [main] SimpleValueBinder - building SimpleValue for lastName
+[TRACE] 2023-02-20 14:43:22.347 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [last_name]
+[DEBUG] 2023-02-20 14:43:22.347 [main] PropertyBinder - Building property lastName
+[TRACE] 2023-02-20 14:43:22.347 [main] PropertyBinder - Cascading lastName with null
+[TRACE] 2023-02-20 14:43:22.347 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.password
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+[DEBUG] 2023-02-20 14:43:22.348 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.348 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2023-02-20 14:43:22.348 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:password]
+[DEBUG] 2023-02-20 14:43:22.348 [main] SimpleValueBinder - building SimpleValue for password
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+[DEBUG] 2023-02-20 14:43:22.348 [main] PropertyBinder - Building property password
+[TRACE] 2023-02-20 14:43:22.348 [main] PropertyBinder - Cascading password with null
+[TRACE] 2023-02-20 14:43:22.348 [main] AnnotationBinder - Processing annotations of com.compostcollectors.entity.User.userName
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [user_name]
+[TRACE] 2023-02-20 14:43:22.348 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [user_name]
+[DEBUG] 2023-02-20 14:43:22.348 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2023-02-20 14:43:22.348 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2023-02-20 14:43:22.348 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.compostcollectors.entity.User:userName]
+[DEBUG] 2023-02-20 14:43:22.349 [main] SimpleValueBinder - building SimpleValue for userName
+[TRACE] 2023-02-20 14:43:22.349 [main] NormalizingIdentifierHelperImpl - Normalizing identifier quoting [user_name]
+[DEBUG] 2023-02-20 14:43:22.349 [main] PropertyBinder - Building property userName
+[TRACE] 2023-02-20 14:43:22.349 [main] PropertyBinder - Cascading userName with null
+[DEBUG] 2023-02-20 14:43:22.350 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2023-02-20 14:43:22.350 [main] SimpleValueBinder - Starting fillSimpleValue for address
+[DEBUG] 2023-02-20 14:43:22.350 [main] SimpleValueBinder - Starting fillSimpleValue for binWeight
+[DEBUG] 2023-02-20 14:43:22.350 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2023-02-20 14:43:22.350 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2023-02-20 14:43:22.351 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2023-02-20 14:43:22.351 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2023-02-20 14:43:22.351 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2023-02-20 14:43:22.352 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[TRACE] 2023-02-20 14:43:22.366 [main] BatchFetchStyle - Interpreting BatchFetchStyle from setting : null
+[TRACE] 2023-02-20 14:43:22.367 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+[DEBUG] 2023-02-20 14:43:22.380 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - SessionFactory name : null
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Statistics: disabled
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Default null ordering: NONE
+[DEBUG] 2023-02-20 14:43:22.381 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Query language substitutions: {}
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Named query checking : enabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Second-level cache: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - JDBC batch size: 15
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2023-02-20 14:43:22.382 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2023-02-20 14:43:22.383 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2023-02-20 14:43:22.383 [main] Settings - JPA compliance - query : 
+[DEBUG] 2023-02-20 14:43:22.383 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2023-02-20 14:43:22.383 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2023-02-20 14:43:22.383 [main] Settings - JPA compliance - transactions : 
+[TRACE] 2023-02-20 14:43:22.383 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+[TRACE] 2023-02-20 14:43:22.388 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+[TRACE] 2023-02-20 14:43:22.422 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+[INFO ] 2023-02-20 14:43:22.424 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[TRACE] 2023-02-20 14:43:22.428 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+[DEBUG] 2023-02-20 14:43:22.438 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2023-02-20 14:43:22.438 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/npeck/IdeaProjects/compostcollectors/target/test-classes:/Users/npeck/IdeaProjects/compostcollectors/target/classes:/Users/npeck/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/npeck/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/npeck/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/npeck/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/Users/npeck/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/npeck/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/npeck/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/npeck/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/npeck/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/npeck/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/npeck/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/npeck/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/npeck/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/npeck/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/npeck/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/npeck/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/npeck/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/npeck/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/npeck/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/npeck/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/npeck/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/npeck/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/npeck/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/npeck/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/npeck/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/npeck/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/npeck/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/npeck/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/npeck/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/npeck/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/npeck/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/npeck/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/npeck/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/npeck/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/npeck/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/npeck/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/npeck/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/npeck/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/npeck/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.compostcollectors.persistence.UserDaoTest, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/npeck, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2023-01-17, java.home=/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=Mandrak3!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.18+9-LTS-195, user.name=npeck, path.separator=:, hibernate.connection.username=****, os.version=12.6.2, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_CompostCollectors, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/hg/rknnb93961z4y2hkmrsrmznm0000gn/T/, java.version=11.0.18, user.dir=/Users/npeck/IdeaProjects/compostcollectors, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@659feb22, java.library.path=/Users/npeck/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.18+9-LTS-195, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/test_CompostCollectors, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[TRACE] 2023-02-20 14:43:22.443 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+[DEBUG] 2023-02-20 14:43:22.453 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2023-02-20 14:43:22.453 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2023-02-20 14:43:22.453 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2023-02-20 14:43:22.454 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5d43409a] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@28369db0]
+[TRACE] 2023-02-20 14:43:22.470 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+[TRACE] 2023-02-20 14:43:22.472 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+[TRACE] 2023-02-20 14:43:22.496 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+[DEBUG] 2023-02-20 14:43:22.498 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.compostcollectors.entity.User] is safe
+[DEBUG] 2023-02-20 14:43:22.498 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.511 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.compostcollectors.entity.User] is safe
+[DEBUG] 2023-02-20 14:43:22.511 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.compostcollectors.entity.User
+[TRACE] 2023-02-20 14:43:22.706 [main] AbstractPropertyMapping - Skipping duplicate registration of path [address], existing type = [org.hibernate.type.StringType@2679311f], incoming type = [org.hibernate.type.StringType@2679311f]
+[TRACE] 2023-02-20 14:43:22.706 [main] AbstractPropertyMapping - Skipping duplicate registration of path [binWeight], existing type = [org.hibernate.type.IntegerType@476a736d], incoming type = [org.hibernate.type.IntegerType@476a736d]
+[TRACE] 2023-02-20 14:43:22.706 [main] AbstractPropertyMapping - Skipping duplicate registration of path [email], existing type = [org.hibernate.type.StringType@2679311f], incoming type = [org.hibernate.type.StringType@2679311f]
+[TRACE] 2023-02-20 14:43:22.706 [main] AbstractPropertyMapping - Skipping duplicate registration of path [firstName], existing type = [org.hibernate.type.StringType@2679311f], incoming type = [org.hibernate.type.StringType@2679311f]
+[TRACE] 2023-02-20 14:43:22.707 [main] AbstractPropertyMapping - Skipping duplicate registration of path [lastName], existing type = [org.hibernate.type.StringType@2679311f], incoming type = [org.hibernate.type.StringType@2679311f]
+[TRACE] 2023-02-20 14:43:22.707 [main] AbstractPropertyMapping - Skipping duplicate registration of path [password], existing type = [org.hibernate.type.StringType@2679311f], incoming type = [org.hibernate.type.StringType@2679311f]
+[TRACE] 2023-02-20 14:43:22.707 [main] AbstractPropertyMapping - Skipping duplicate registration of path [userName], existing type = [org.hibernate.type.StringType@2679311f], incoming type = [org.hibernate.type.StringType@2679311f]
+[TRACE] 2023-02-20 14:43:22.707 [main] AbstractPropertyMapping - Skipping duplicate registration of path [id], existing type = [org.hibernate.type.IntegerType@476a736d], incoming type = [org.hibernate.type.IntegerType@476a736d]
+[DEBUG] 2023-02-20 14:43:22.711 [main] AbstractEntityPersister - Static SQL for entity: com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.712 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2023-02-20 14:43:22.712 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.address as address2_0_, user_.bin_weight as bin_weig3_0_, user_.email as email4_0_, user_.first_name as first_na5_0_, user_.last_name as last_nam6_0_, user_.password as password7_0_, user_.user_name as user_nam8_0_ from user user_ where user_.id=?
+[DEBUG] 2023-02-20 14:43:22.712 [main] AbstractEntityPersister -  Insert 0: insert into user (address, bin_weight, email, first_name, last_name, password, user_name, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2023-02-20 14:43:22.712 [main] AbstractEntityPersister -  Update 0: update user set address=?, bin_weight=?, email=?, first_name=?, last_name=?, password=?, user_name=? where id=?
+[DEBUG] 2023-02-20 14:43:22.712 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2023-02-20 14:43:22.712 [main] AbstractEntityPersister -  Identity insert: insert into user (address, bin_weight, email, first_name, last_name, password, user_name) values (?, ?, ?, ?, ?, ?, ?)
+[TRACE] 2023-02-20 14:43:22.731 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy -  Starting root entity : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.734 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23ca36d]
+[TRACE] 2023-02-20 14:43:22.734 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@2a50b32d
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - .. Registering AssociationKey : AssociationKey(table=user, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@2a50b32d
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting entity identifier : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.735 [main] MetamodelGraphWalker - Visiting attribute path : address
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=address, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=address, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.735 [main] MetamodelGraphWalker - Visiting attribute path : binWeight
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=binWeight, type=integer [non-identifier])
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=binWeight, type=integer [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.735 [main] MetamodelGraphWalker - Visiting attribute path : email
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.735 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[TRACE] 2023-02-20 14:43:22.735 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=firstName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=firstName, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.736 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=lastName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=lastName, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.736 [main] MetamodelGraphWalker - Visiting attribute path : password
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=password, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=password, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.736 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=userName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=userName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@2a50b32d
+[TRACE] 2023-02-20 14:43:22.736 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy -  Finished root entity : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.736 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2023-02-20 14:43:22.747 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2023-02-20 14:43:22.750 [main] LoadPlanTreePrinter - LoadPlan(entity=com.compostcollectors.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.compostcollectors.entity.User, querySpaceUid=<gen:0>, path=com.compostcollectors.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.compostcollectors.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2023-02-20 14:43:22.752 [main] EntityLoader - Static select for entity com.compostcollectors.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.address as address2_0_0_, user0_.bin_weight as bin_weig3_0_0_, user0_.email as email4_0_0_, user0_.first_name as first_na5_0_0_, user0_.last_name as last_nam6_0_0_, user0_.password as password7_0_0_, user0_.user_name as user_nam8_0_0_ from user user0_ where user0_.id=?
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy -  Starting root entity : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.752 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c531172]
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@489bc8fd
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - .. Registering AssociationKey : AssociationKey(table=user, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@489bc8fd
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting entity identifier : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.752 [main] MetamodelGraphWalker - Visiting attribute path : address
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=address, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=address, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.752 [main] MetamodelGraphWalker - Visiting attribute path : binWeight
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=binWeight, type=integer [non-identifier])
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=binWeight, type=integer [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.752 [main] MetamodelGraphWalker - Visiting attribute path : email
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.752 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.753 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=firstName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=firstName, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.753 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=lastName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=lastName, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.753 [main] MetamodelGraphWalker - Visiting attribute path : password
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=password, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=password, type=string [non-identifier])
+[DEBUG] 2023-02-20 14:43:22.753 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - >> Starting attribute Attribute(name=userName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - << Finishing up attribute : Attribute(name=userName, type=string [non-identifier])
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@489bc8fd
+[TRACE] 2023-02-20 14:43:22.753 [main] AbstractLoadPlanBuildingAssociationVisitationStrategy -  Finished root entity : com.compostcollectors.entity.User
+[DEBUG] 2023-02-20 14:43:22.753 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2023-02-20 14:43:22.753 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2023-02-20 14:43:22.753 [main] LoadPlanTreePrinter - LoadPlan(entity=com.compostcollectors.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.compostcollectors.entity.User, querySpaceUid=<gen:0>, path=com.compostcollectors.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.compostcollectors.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2023-02-20 14:43:22.754 [main] EntityLoader - Static select for entity com.compostcollectors.entity.User [READ]: select user0_.id as id1_0_0_, user0_.address as address2_0_0_, user0_.bin_weight as bin_weig3_0_0_, user0_.email as email4_0_0_, user0_.first_name as first_na5_0_0_, user0_.last_name as last_nam6_0_0_, user0_.password as password7_0_0_, user0_.user_name as user_nam8_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2023-02-20 14:43:22.766 [main] Loader - Static select for action ACTION_MERGE on entity com.compostcollectors.entity.User: select user0_.id as id1_0_0_, user0_.address as address2_0_0_, user0_.bin_weight as bin_weig3_0_0_, user0_.email as email4_0_0_, user0_.first_name as first_na5_0_0_, user0_.last_name as last_nam6_0_0_, user0_.password as password7_0_0_, user0_.user_name as user_nam8_0_0_ from user user0_ where user0_.id=?
+[DEBUG] 2023-02-20 14:43:22.766 [main] Loader - Static select for action ACTION_REFRESH on entity com.compostcollectors.entity.User: select user0_.id as id1_0_0_, user0_.address as address2_0_0_, user0_.bin_weight as bin_weig3_0_0_, user0_.email as email4_0_0_, user0_.first_name as first_na5_0_0_, user0_.last_name as last_nam6_0_0_, user0_.password as password7_0_0_, user0_.user_name as user_nam8_0_0_ from user user0_ where user0_.id=?
+[TRACE] 2023-02-20 14:43:22.780 [main] MetadataContext - Wrapping up metadata context...
+[TRACE] 2023-02-20 14:43:22.780 [main] MetadataContext - Starting entity [com.compostcollectors.entity.User]
+[TRACE] 2023-02-20 14:43:22.780 [main] AttributeFactory - Building identifier attribute [User.id]
+[TRACE] 2023-02-20 14:43:22.780 [main] AttributeFactory - Starting attribute metadata determination [id]
+[TRACE] 2023-02-20 14:43:22.781 [main] AttributeFactory -     Determined member [private int com.compostcollectors.entity.User.id]
+[TRACE] 2023-02-20 14:43:22.781 [main] AttributeFactory -     Determined type [name=integer, class=org.hibernate.type.IntegerType]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory - Building attribute [User.address]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory - Starting attribute metadata determination [address]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory -     Determined member [private java.lang.String com.compostcollectors.entity.User.address]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory -     Determined type [name=string, class=org.hibernate.type.StringType]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory - Building attribute [User.binWeight]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory - Starting attribute metadata determination [binWeight]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory -     Determined member [private int com.compostcollectors.entity.User.binWeight]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory -     Determined type [name=integer, class=org.hibernate.type.IntegerType]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory - Building attribute [User.email]
+[TRACE] 2023-02-20 14:43:22.784 [main] AttributeFactory - Starting attribute metadata determination [email]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined member [private java.lang.String com.compostcollectors.entity.User.email]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined type [name=string, class=org.hibernate.type.StringType]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Building attribute [User.firstName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Starting attribute metadata determination [firstName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined member [private java.lang.String com.compostcollectors.entity.User.firstName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined type [name=string, class=org.hibernate.type.StringType]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Building attribute [User.lastName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Starting attribute metadata determination [lastName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined member [private java.lang.String com.compostcollectors.entity.User.lastName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined type [name=string, class=org.hibernate.type.StringType]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Building attribute [User.password]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Starting attribute metadata determination [password]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined member [private java.lang.String com.compostcollectors.entity.User.password]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined type [name=string, class=org.hibernate.type.StringType]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Building attribute [User.userName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory - Starting attribute metadata determination [userName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined member [private java.lang.String com.compostcollectors.entity.User.userName]
+[TRACE] 2023-02-20 14:43:22.785 [main] AttributeFactory -     Determined type [name=string, class=org.hibernate.type.StringType]
+[TRACE] 2023-02-20 14:43:22.785 [main] MetadataContext - Completed entity [com.compostcollectors.entity.User]
+[DEBUG] 2023-02-20 14:43:22.789 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[TRACE] 2023-02-20 14:43:22.789 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+[DEBUG] 2023-02-20 14:43:22.789 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[TRACE] 2023-02-20 14:43:22.789 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformResolver]
+[DEBUG] 2023-02-20 14:43:22.790 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2023-02-20 14:43:22.793 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2023-02-20 14:43:22.794 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2023-02-20 14:43:22.794 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2023-02-20 14:43:22.795 [main] NamedQueryRepository - Checking 0 named SQL queries
+[TRACE] 2023-02-20 14:43:22.795 [main] TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@28369db0] for TypeConfiguration
+[DEBUG] 2023-02-20 14:43:22.797 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@599a9cb2
+[TRACE] 2023-02-20 14:43:22.797 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+[DEBUG] 2023-02-20 14:43:22.798 [main] SessionFactoryRegistry - Registering SessionFactory: 18b9e789-82e6-452d-a901-70a6b479588c (<unnamed>)
+[DEBUG] 2023-02-20 14:43:22.798 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[TRACE] 2023-02-20 14:43:22.829 [main] SessionFactoryImpl$SessionBuilderImpl - Opening Hibernate Session.  tenant=null, owner=null
+[TRACE] 2023-02-20 14:43:22.888 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+[DEBUG] 2023-02-20 14:43:22.892 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[TRACE] 2023-02-20 14:43:22.895 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.jmx.spi.JmxService]
+[TRACE] 2023-02-20 14:43:22.898 [main] SessionImpl - Opened Session [f4bb234a-a973-482e-bbca-d9fc01c7b4aa] at timestamp: 1676925802862
+[DEBUG] 2023-02-20 14:43:22.915 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[TRACE] 2023-02-20 14:43:22.924 [main] QueryPlanCache - Unable to locate HQL query plan in cache; generating (select generatedAlias0 from User as generatedAlias0)
+[TRACE] 2023-02-20 14:43:22.927 [main] AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.hql.spi.QueryTranslatorFactory]
+[DEBUG] 2023-02-20 14:43:22.929 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7d30007d
+[DEBUG] 2023-02-20 14:43:22.950 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.compostcollectors.entity.User as generatedAlias0
+[DEBUG] 2023-02-20 14:43:22.956 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2023-02-20 14:43:22.961 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'compostcollectors'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2023-02-20 14:43:22.980 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2023-02-20 14:43:22.989 [main] FromElement - FromClause{level=1} : com.compostcollectors.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2023-02-20 14:43:22.990 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2023-02-20 14:43:22.991 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2023-02-20 14:43:22.991 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2023-02-20 14:43:22.999 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2023-02-20 14:43:22.999 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2023-02-20 14:43:22.999 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=com.compostcollectors.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=com.compostcollectors.entity.User}}
+
+[DEBUG] 2023-02-20 14:43:22.999 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2023-02-20 14:43:23.004 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.compostcollectors.entity.User as generatedAlias0
+[DEBUG] 2023-02-20 14:43:23.004 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_ from user user0_
+[DEBUG] 2023-02-20 14:43:23.004 [main] ErrorTracker - throwQueryException() : no errors
+[TRACE] 2023-02-20 14:43:23.009 [main] QueryPlanCache - Located HQL query plan in cache (select generatedAlias0 from User as generatedAlias0)
+[TRACE] 2023-02-20 14:43:23.015 [main] QueryPlanCache - Located HQL query plan in cache (select generatedAlias0 from User as generatedAlias0)
+[TRACE] 2023-02-20 14:43:23.015 [main] HQLQueryPlan - Find: select generatedAlias0 from User as generatedAlias0
+[TRACE] 2023-02-20 14:43:23.015 [main] QueryParameters - Named parameters: {}
+[DEBUG] 2023-02-20 14:43:23.019 [main] SQL - select user0_.id as id1_0_, user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_ from user user0_
+[TRACE] 2023-02-20 14:43:23.033 [main] ResourceRegistryStandardImpl - Registering statement [com.mchange.v2.c3p0.impl.NewProxyPreparedStatement@755a7218 [wrapping: com.mysql.cj.jdbc.ClientPreparedStatement: select user0_.id as id1_0_, user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_ from user user0_]]
+[TRACE] 2023-02-20 14:43:23.033 [main] JdbcCoordinatorImpl - Registering last query statement [com.mchange.v2.c3p0.impl.NewProxyPreparedStatement@755a7218 [wrapping: com.mysql.cj.jdbc.ClientPreparedStatement: select user0_.id as id1_0_, user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_ from user user0_]]
+[TRACE] 2023-02-20 14:43:23.034 [main] Loader - Bound [1] parameters total
+[TRACE] 2023-02-20 14:43:23.037 [main] ResourceRegistryStandardImpl - Registering result set [com.mchange.v2.c3p0.impl.NewProxyResultSet@527937d0 [wrapping: com.mysql.cj.jdbc.result.ResultSetImpl@6b063470]]
+[TRACE] 2023-02-20 14:43:23.037 [main] Loader - Processing result set
+[DEBUG] 2023-02-20 14:43:23.037 [main] Loader - Result set row: 0
+[TRACE] 2023-02-20 14:43:23.039 [main] BasicExtractor - extracted value ([id1_0_] : [INTEGER]) - [1]
+[DEBUG] 2023-02-20 14:43:23.041 [main] Loader - Result row: EntityKey[com.compostcollectors.entity.User#1]
+[TRACE] 2023-02-20 14:43:23.041 [main] Loader - Initializing object from ResultSet: [com.compostcollectors.entity.User#1]
+[TRACE] 2023-02-20 14:43:23.047 [main] AbstractEntityPersister - Hydrating entity: [com.compostcollectors.entity.User#1]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([address2_0_] : [VARCHAR]) - [1234 street]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([bin_weig3_0_] : [INTEGER]) - [10]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [jycone@mailinator.com]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([first_na5_0_] : [VARCHAR]) - [Joe]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([last_nam6_0_] : [VARCHAR]) - [Coyne]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([password7_0_] : [VARCHAR]) - [supersecret1]
+[TRACE] 2023-02-20 14:43:23.047 [main] BasicExtractor - extracted value ([user_nam8_0_] : [VARCHAR]) - [jcoyne]
+[DEBUG] 2023-02-20 14:43:23.048 [main] Loader - Result set row: 1
+[TRACE] 2023-02-20 14:43:23.048 [main] BasicExtractor - extracted value ([id1_0_] : [INTEGER]) - [2]
+[DEBUG] 2023-02-20 14:43:23.048 [main] Loader - Result row: EntityKey[com.compostcollectors.entity.User#2]
+[TRACE] 2023-02-20 14:43:23.048 [main] Loader - Initializing object from ResultSet: [com.compostcollectors.entity.User#2]
+[TRACE] 2023-02-20 14:43:23.048 [main] AbstractEntityPersister - Hydrating entity: [com.compostcollectors.entity.User#2]
+[TRACE] 2023-02-20 14:43:23.048 [main] BasicExtractor - extracted value ([address2_0_] : [VARCHAR]) - [4567 street]
+[TRACE] 2023-02-20 14:43:23.048 [main] BasicExtractor - extracted value ([bin_weig3_0_] : [INTEGER]) - [15]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [fhensen@mailinator.com]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([first_na5_0_] : [VARCHAR]) - [Fred]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([last_nam6_0_] : [VARCHAR]) - [Hensen]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([password7_0_] : [VARCHAR]) - [supersecret2]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([user_nam8_0_] : [VARCHAR]) - [fhensen]
+[DEBUG] 2023-02-20 14:43:23.049 [main] Loader - Result set row: 2
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([id1_0_] : [INTEGER]) - [3]
+[DEBUG] 2023-02-20 14:43:23.049 [main] Loader - Result row: EntityKey[com.compostcollectors.entity.User#3]
+[TRACE] 2023-02-20 14:43:23.049 [main] Loader - Initializing object from ResultSet: [com.compostcollectors.entity.User#3]
+[TRACE] 2023-02-20 14:43:23.049 [main] AbstractEntityPersister - Hydrating entity: [com.compostcollectors.entity.User#3]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([address2_0_] : [VARCHAR]) - [8910 street]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([bin_weig3_0_] : [INTEGER]) - [20]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [bcurry@mailinator.com]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([first_na5_0_] : [VARCHAR]) - [Barney]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([last_nam6_0_] : [VARCHAR]) - [Curry]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([password7_0_] : [VARCHAR]) - [supersecret3]
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([user_nam8_0_] : [VARCHAR]) - [bcurry]
+[DEBUG] 2023-02-20 14:43:23.049 [main] Loader - Result set row: 3
+[TRACE] 2023-02-20 14:43:23.049 [main] BasicExtractor - extracted value ([id1_0_] : [INTEGER]) - [4]
+[DEBUG] 2023-02-20 14:43:23.049 [main] Loader - Result row: EntityKey[com.compostcollectors.entity.User#4]
+[TRACE] 2023-02-20 14:43:23.049 [main] Loader - Initializing object from ResultSet: [com.compostcollectors.entity.User#4]
+[TRACE] 2023-02-20 14:43:23.049 [main] AbstractEntityPersister - Hydrating entity: [com.compostcollectors.entity.User#4]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([address2_0_] : [VARCHAR]) - [1123 street]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([bin_weig3_0_] : [INTEGER]) - [25]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [kmack@mailinator.com]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([first_na5_0_] : [VARCHAR]) - [Karen]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([last_nam6_0_] : [VARCHAR]) - [Mack]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([password7_0_] : [VARCHAR]) - [supersecret4]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([user_nam8_0_] : [VARCHAR]) - [kmack]
+[DEBUG] 2023-02-20 14:43:23.050 [main] Loader - Result set row: 4
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([id1_0_] : [INTEGER]) - [5]
+[DEBUG] 2023-02-20 14:43:23.050 [main] Loader - Result row: EntityKey[com.compostcollectors.entity.User#5]
+[TRACE] 2023-02-20 14:43:23.050 [main] Loader - Initializing object from ResultSet: [com.compostcollectors.entity.User#5]
+[TRACE] 2023-02-20 14:43:23.050 [main] AbstractEntityPersister - Hydrating entity: [com.compostcollectors.entity.User#5]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([address2_0_] : [VARCHAR]) - [1223 street]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([bin_weig3_0_] : [INTEGER]) - [30]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [dklein@mailinator.com]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([first_na5_0_] : [VARCHAR]) - [Dianne]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([last_nam6_0_] : [VARCHAR]) - [Klein]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([password7_0_] : [VARCHAR]) - [supersecret5]
+[TRACE] 2023-02-20 14:43:23.050 [main] BasicExtractor - extracted value ([user_nam8_0_] : [VARCHAR]) - [dklein]
+[DEBUG] 2023-02-20 14:43:23.050 [main] Loader - Result set row: 5
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([id1_0_] : [INTEGER]) - [6]
+[DEBUG] 2023-02-20 14:43:23.051 [main] Loader - Result row: EntityKey[com.compostcollectors.entity.User#6]
+[TRACE] 2023-02-20 14:43:23.051 [main] Loader - Initializing object from ResultSet: [com.compostcollectors.entity.User#6]
+[TRACE] 2023-02-20 14:43:23.051 [main] AbstractEntityPersister - Hydrating entity: [com.compostcollectors.entity.User#6]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([address2_0_] : [VARCHAR]) - [1323 street]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([bin_weig3_0_] : [INTEGER]) - [35]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [dtilman@mailinator.com]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([first_na5_0_] : [VARCHAR]) - [Dawn]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([last_nam6_0_] : [VARCHAR]) - [Tillman]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([password7_0_] : [VARCHAR]) - [supersecret6]
+[TRACE] 2023-02-20 14:43:23.051 [main] BasicExtractor - extracted value ([user_nam8_0_] : [VARCHAR]) - [dtillman]
+[TRACE] 2023-02-20 14:43:23.051 [main] Loader - Done processing result set (6 rows)
+[TRACE] 2023-02-20 14:43:23.052 [main] Loader - Total objects hydrated: 6
+[DEBUG] 2023-02-20 14:43:23.052 [main] TwoPhaseLoad - Resolving attributes for [com.compostcollectors.entity.User#1]
+[DEBUG] 2023-02-20 14:43:23.052 [main] TwoPhaseLoad - Processing attribute `address` : value = 1234 street
+[DEBUG] 2023-02-20 14:43:23.052 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Processing attribute `binWeight` : value = 10
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Attribute (`binWeight`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Processing attribute `email` : value = jycone@mailinator.com
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Joe
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Coyne
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Processing attribute `password` : value = supersecret1
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Processing attribute `userName` : value = jcoyne
+[DEBUG] 2023-02-20 14:43:23.053 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Done materializing entity [com.compostcollectors.entity.User#1]
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Resolving attributes for [com.compostcollectors.entity.User#2]
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `address` : value = 4567 street
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `binWeight` : value = 15
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`binWeight`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `email` : value = fhensen@mailinator.com
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Fred
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Hensen
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `password` : value = supersecret2
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `userName` : value = fhensen
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Done materializing entity [com.compostcollectors.entity.User#2]
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Resolving attributes for [com.compostcollectors.entity.User#3]
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `address` : value = 8910 street
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `binWeight` : value = 20
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`binWeight`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `email` : value = bcurry@mailinator.com
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Barney
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Curry
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `password` : value = supersecret3
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Processing attribute `userName` : value = bcurry
+[DEBUG] 2023-02-20 14:43:23.054 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Done materializing entity [com.compostcollectors.entity.User#3]
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Resolving attributes for [com.compostcollectors.entity.User#4]
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `address` : value = 1123 street
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `binWeight` : value = 25
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`binWeight`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `email` : value = kmack@mailinator.com
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Karen
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Mack
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `password` : value = supersecret4
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `userName` : value = kmack
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Done materializing entity [com.compostcollectors.entity.User#4]
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Resolving attributes for [com.compostcollectors.entity.User#5]
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `address` : value = 1223 street
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `binWeight` : value = 30
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`binWeight`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `email` : value = dklein@mailinator.com
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Dianne
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Klein
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `password` : value = supersecret5
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `userName` : value = dklein
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Done materializing entity [com.compostcollectors.entity.User#5]
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Resolving attributes for [com.compostcollectors.entity.User#6]
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Processing attribute `address` : value = 1323 street
+[DEBUG] 2023-02-20 14:43:23.055 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Processing attribute `binWeight` : value = 35
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Attribute (`binWeight`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Processing attribute `email` : value = dtilman@mailinator.com
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Dawn
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Tillman
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Processing attribute `password` : value = supersecret6
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Processing attribute `userName` : value = dtillman
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2023-02-20 14:43:23.056 [main] TwoPhaseLoad - Done materializing entity [com.compostcollectors.entity.User#6]
+[TRACE] 2023-02-20 14:43:23.056 [main] ResourceRegistryStandardImpl - Releasing statement [com.mchange.v2.c3p0.impl.NewProxyPreparedStatement@755a7218 [wrapping: com.mysql.cj.jdbc.ClientPreparedStatement: select user0_.id as id1_0_, user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_ from user user0_]]
+[TRACE] 2023-02-20 14:43:23.056 [main] ResourceRegistryStandardImpl - Closing result set [com.mchange.v2.c3p0.impl.NewProxyResultSet@527937d0 [wrapping: com.mysql.cj.jdbc.result.ResultSetImpl@6b063470]]
+[TRACE] 2023-02-20 14:43:23.056 [main] ResourceRegistryStandardImpl - Closing prepared statement [com.mchange.v2.c3p0.impl.NewProxyPreparedStatement@755a7218 [wrapping: com.mysql.cj.jdbc.ClientPreparedStatement: select user0_.id as id1_0_, user0_.address as address2_0_, user0_.bin_weight as bin_weig3_0_, user0_.email as email4_0_, user0_.first_name as first_na5_0_, user0_.last_name as last_nam6_0_, user0_.password as password7_0_, user0_.user_name as user_nam8_0_ from user user0_]]
+[TRACE] 2023-02-20 14:43:23.057 [main] JdbcCoordinatorImpl - Starting after statement execution processing [AFTER_TRANSACTION]
+[TRACE] 2023-02-20 14:43:23.057 [main] StatefulPersistenceContext - Initializing non-lazy collections
+[TRACE] 2023-02-20 14:43:23.058 [main] AbstractLogicalConnectionImplementor - LogicalConnection#afterTransaction
+[TRACE] 2023-02-20 14:43:23.058 [main] ResourceRegistryStandardImpl - Releasing JDBC resources
+[DEBUG] 2023-02-20 14:43:23.058 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[TRACE] 2023-02-20 14:43:23.059 [main] ResourceRegistryStandardImpl - Releasing JDBC resources
+[TRACE] 2023-02-20 14:43:23.059 [main] SessionImpl - Closing session [f4bb234a-a973-482e-bbca-d9fc01c7b4aa]
+[TRACE] 2023-02-20 14:43:23.059 [main] JdbcCoordinatorImpl - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4409cae6]
+[TRACE] 2023-02-20 14:43:23.059 [main] ResourceRegistryStandardImpl - Releasing JDBC resources
+[TRACE] 2023-02-20 14:43:23.059 [main] LogicalConnectionManagedImpl - Closing logical connection
+[TRACE] 2023-02-20 14:43:23.059 [main] LogicalConnectionManagedImpl - Logical connection closed
