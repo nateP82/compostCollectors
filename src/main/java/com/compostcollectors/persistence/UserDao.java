@@ -22,6 +22,7 @@ public class UserDao {
      * @return executeQuery(sql) results from the database query
      */
     public List<User> getAllUsers() {
+        logger.info("Retreiving all users");
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery(User.class);
@@ -35,6 +36,7 @@ public class UserDao {
      * @return users list of users that match search term
      */
     public List<User> getUsersByLastName(String lastName) {
+        logger.info("Retreiving users by last name");
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery(User.class);
@@ -52,6 +54,7 @@ public class UserDao {
      * @return user - user based on the Id
      */
     public User getUserById(int id) {
+        logger.info("Retreiving user by Id");
         Session session = sessionFactory.openSession();
         User user = session.get(User.class, id);
         session.close();
@@ -62,6 +65,7 @@ public class UserDao {
      * @param user  User to be inserted or updated
      */
     public void saveOrUpdate(User user) {
+        logger.info("Saving or updating a user");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(user);
@@ -73,6 +77,7 @@ public class UserDao {
      * @param user  User to be inserted or updated
      */
     public int insert(User user) {
+        logger.info("Inserting a user");
         int id = 0;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -86,6 +91,7 @@ public class UserDao {
      * @param user User to be deleted
      */
     public void delete(User user) {
+        logger.info("Deleting a user");
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(user);
