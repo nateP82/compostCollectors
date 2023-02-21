@@ -3,6 +3,8 @@ package com.compostcollectors.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Class that represents a compost collectors user
@@ -27,6 +29,8 @@ public class User {
     private String address;
     @Column(name = "bin_weight")
     private int binWeight;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<PickupService> pickupService = new HashSet<>();
 
     /**
      * Empty constructor
