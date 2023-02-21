@@ -18,7 +18,7 @@ public class PickupServiceDao {
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /** method getAllPickupServices
-     * Method that selects all pickupServices from the pickupService database.
+     * Method that selects all pickupServices from the pickup_service database.
      * @return executeQuery(sql) results from the database query
      */
     public List<PickupService> getAllPickupServices() {
@@ -27,22 +27,6 @@ public class PickupServiceDao {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<PickupService> query = builder.createQuery(PickupService.class);
         Root<PickupService> root = query.from(PickupService.class);
-        List<PickupService> pickupServices = session.createQuery(query).getResultList();
-        session.close();
-        return pickupServices;
-    }
-    /** method getPickupServicesByLastName
-     * Method that selects all pickupServices that match the search term passed to the method
-     * @return pickupServices list of pickupServices that match search term
-     */
-    public List<PickupService> getPickupServicesByLastName(String lastName) {
-        logger.info("Retreiving pickupServices by last name");
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<PickupService> query = builder.createQuery(PickupService.class);
-        Root<PickupService> root = query.from(PickupService.class);
-        Expression<String> propertyPath = root.get("lastName");
-        query.where(builder.like(propertyPath, "%" + lastName + "%"));
         List<PickupService> pickupServices = session.createQuery(query).getResultList();
         session.close();
         return pickupServices;
@@ -73,7 +57,7 @@ public class PickupServiceDao {
         session.close();
     }
     /**
-     * update pickupService
+     * insert new pickupService
      * @param pickupService  PickupService to be inserted or updated
      */
     public int insert(PickupService pickupService) {
