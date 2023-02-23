@@ -51,7 +51,6 @@ class PickupServiceDaoTest {
     /**
      * Verify successful insert of a pickupService
      */
-    // TODO create insert success for pickup service. There's an issue with the constructor.
     @Test
     void insertSuccess() {
         logger.info("Running insertPickupService test");
