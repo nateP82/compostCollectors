@@ -36,7 +36,7 @@ class PickupServiceDaoTest {
     void getAllPickupServicesSuccess() {
         logger.info("Running getAllPickupServices Test");
         List<PickupService> pickupServices = dao.getAllPickupServices();
-        assertEquals(6, pickupServices.size());
+        assertEquals(5, pickupServices.size());
     }
     /**
      * test that verifies the correct pickupService is returned when given a certain id
@@ -57,15 +57,12 @@ class PickupServiceDaoTest {
         logger.info("Running insertPickupService test");
         UserDao userDao = new UserDao();
         User user = userDao.getUserById(1);
-        PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", LocalDate.parse("2023-14-03"), user);
+        PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", LocalDate.parse("2023-03-14"), user);
         user.addPickupService(newPickupService);
         int id = dao.insert(newPickupService);
         assertNotEquals(0,id);
         PickupService insertedPickupService = dao.getPickupServiceById(id);
-        assertEquals("Requesting third bin", insertedPickupService.getDescription());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/pickupServiceguide/html_single/Hibernate_PickupService_Guide.html#mapping-model-pojo-equalshashcode
+        assertTrue(insertedPickupService.equals(newPickupService));
     }
     /**
      * Verify successful delete of pickupService
@@ -87,27 +84,27 @@ class PickupServiceDaoTest {
         pickupServiceToUpdate.setDescription(pickupDescription);
         dao.saveOrUpdate(pickupServiceToUpdate);
         PickupService retreivedPickupService = dao.getPickupServiceById(3);
-        assertEquals(pickupDescription, retreivedPickupService.getDescription());
+        String newServiceDetails = retreivedPickupService.getDescription();
+        logger.debug("Retrieved pickup service", retreivedPickupService);
+        assertEquals(pickupDescription, newServiceDetails);
     }
     /**
      * Verify successful get by property (equal match)
      */
-    // TODO update this test
     @Test
     void getByPropertyEqualSuccess() {
         logger.info("Running getByPropertyEqual test");
-        List<PickupService> pickupServices = dao.getByPropertyEqual("lastName", "Curry");
+        List<PickupService> pickupServices = dao.getByPropertyEqual("description", "Replacement bin requested");
         assertEquals(1, pickupServices.size());
-        assertEquals(3, pickupServices.get(0).getId());
+        assertEquals(2, pickupServices.get(0).getId());
     }
     /**
      * Verify successful get by property (like match)
      */
-    // TODO update this test
     @Test
     void getByPropertyLikeSuccess() {
         logger.info("Running getByPropertyLike test");
-        List<PickupService> pickupServices = dao.getByPropertyLike("lastName", "c");
+        List<PickupService> pickupServices = dao.getByPropertyLike("description", "bin");
         assertEquals(3, pickupServices.size());
     }
 }
