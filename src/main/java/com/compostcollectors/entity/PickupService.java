@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Objects;
 
 /**
  * PickupService class
@@ -136,6 +137,19 @@ public class PickupService {
      */
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PickupService)) return false;
+        PickupService that = (PickupService) o;
+        return getId() == that.getId() && getDescription().equals(that.getDescription()) && getAddress().equals(that.getAddress()) && getPickupDate().equals(that.getPickupDate()) && getUser().equals(that.getUser());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getDescription(), getAddress(), getPickupDate(), getUser());
     }
 
     @Override

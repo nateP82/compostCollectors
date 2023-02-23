@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -202,6 +203,41 @@ public class User {
      */
     public void setBinWeight(int binWeight) {
         this.binWeight = binWeight;
+    }
+
+    /**
+     * addPickupService
+     * Adds a new pickup service to the pickup service set
+     *
+     * @param service new service request
+     */
+    public void addPickupService(PickupService service) {
+        pickupService.add(service);
+        service.setUser(this);
+    }
+
+    /**
+     * deletePickupService
+     * Removes a pickup service from the PickupService set
+     *
+     * @param service service to be removed
+     */
+    public void deletePickupService(PickupService service) {
+        pickupService.remove(service);
+        service.setUser(null);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return getId() == user.getId() && getBinWeight() == user.getBinWeight() && getFirstName().equals(user.getFirstName()) && getLastName().equals(user.getLastName()) && getUserName().equals(user.getUserName()) && getEmail().equals(user.getEmail()) && getPassword().equals(user.getPassword()) && getAddress().equals(user.getAddress());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getFirstName(), getLastName(), getUserName(), getEmail(), getPassword(), getAddress(), getBinWeight());
     }
 
     /**

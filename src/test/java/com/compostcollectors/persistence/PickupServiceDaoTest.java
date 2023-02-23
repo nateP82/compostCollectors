@@ -52,18 +52,21 @@ class PickupServiceDaoTest {
      * Verify successful insert of a pickupService
      */
     // TODO create insert success for pickup service. There's an issue with the constructor.
-//    @Test
-//    void insertSuccess() {
-//        logger.info("Running insertPickupService test");
-//        PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", LocalDate.parse("2023-14-03"), user);
-//        int id = dao.insert(newPickupService);
-//        assertNotEquals(0,id);
-//        PickupService insertedPickupService = dao.getPickupServiceById(id);
-//        assertEquals("Requesting third bin", insertedPickupService.getDescription());
+    @Test
+    void insertSuccess() {
+        logger.info("Running insertPickupService test");
+        UserDao userDao = new UserDao();
+        User user = userDao.getUserById(1);
+        PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", LocalDate.parse("2023-14-03"), user);
+        user.addPickupService(newPickupService);
+        int id = dao.insert(newPickupService);
+        assertNotEquals(0,id);
+        PickupService insertedPickupService = dao.getPickupServiceById(id);
+        assertEquals("Requesting third bin", insertedPickupService.getDescription());
         // Could continue comparing all values, but
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/pickupServiceguide/html_single/Hibernate_PickupService_Guide.html#mapping-model-pojo-equalshashcode
-//    }
+    }
     /**
      * Verify successful delete of pickupService
      */
