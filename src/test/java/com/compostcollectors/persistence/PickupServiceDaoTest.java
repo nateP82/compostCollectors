@@ -63,7 +63,7 @@ class PickupServiceDaoTest {
         // Could continue comparing all values, but
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/pickupServiceguide/html_single/Hibernate_PickupService_Guide.html#mapping-model-pojo-equalshashcode
-    }
+//    }
     /**
      * Verify successful delete of pickupService
      */
