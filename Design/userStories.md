@@ -1,5 +1,8 @@
 # User Stories
 
+## Admin User
+As an admin on the site, I want to be able to have elevated priviledges like update, and delete for our customers
+
 ## Create Account
 As a new user to the compost collectors site, I want to be able to sign up for a new account to use the available services on the site. [MVP]
 
@@ -13,7 +16,7 @@ As a user, I want to be able to see my account information. [MVP]
 As a user, I want to be able to edit my profile information at any time. [Stretch Goal]
 
 ## Delete user account
-As a user, I want to be able to delete my account[MVP]
+As a admin user, I want to be able to delete a user account. [MVP]
 
 ## View user collection statistics
 As a user, I want to view a personalized chart on my compost contributions [MVP]
