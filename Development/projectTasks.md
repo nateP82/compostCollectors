@@ -1,5 +1,8 @@
 # Project tasks
 
+## Update dependencies
+- [ ] update the list of technologies used for the project
+
 ## Create Database
 - [x] Setup test and "production" databases in MySQL
 - [x] Verify database connection
