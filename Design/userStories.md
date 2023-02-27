@@ -13,7 +13,7 @@ As a registered user, I want to be able to successfully sign in/out of my accoun
 As a user, I want to be able to see my account information. [MVP]
 
 ## Edit profile
-As a user, I want to be able to edit my profile information at any time. [Stretch Goal]
+As a user, I want to be able to edit my profile information at any time. [MVP]
 
 ## Delete user account
 As a admin user, I want to be able to delete a user account. [MVP]
