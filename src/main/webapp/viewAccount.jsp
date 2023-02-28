@@ -12,7 +12,7 @@
 <h2>Account Details</h2>
 <form method="GET" action="viewAccount">
     <label for="searchUsers" name="searchUsers">Search Users by Last Name</label>
-    <input type="text" id="searchUsers">
+    <input type="text" id="searchUsers" name="searchUsers">
     <div>
     <button type="submit" name="searchAccount" value="searchAccount">View Account</button>
     </div>
