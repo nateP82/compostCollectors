@@ -12,13 +12,13 @@
 <h3>
     Create User Account
 </h3>
-<form action="createUser">
+<form method="POST" action="createAccount">
     <label for="firstName">First Name:</label>
     <input id="firstName"  name="firstName" type="text">
     <label for="lastName">Last Name:</label>
     <input id="lastName"  name="lastName" type="text">
-    <label for="userName">Username:</label>
-    <input id="userName"  name="userName" type="text">
+    <label for="username">Username:</label>
+    <input id="username"  name="username" type="text">
     <label for="email">Email:</label>
     <input id="email"  name="email" type="text">
     <label for="password">Password:</label>
