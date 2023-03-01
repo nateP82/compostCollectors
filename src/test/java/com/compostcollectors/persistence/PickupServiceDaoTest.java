@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PickupServiceDaoTest {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    PickupServiceDao dao;
+
     GenericDao genericDao;
 
     /**
@@ -24,7 +24,6 @@ class PickupServiceDaoTest {
     @BeforeEach
     void setUp() {
         logger.info("Running setup before each test");
-        dao = new PickupServiceDao();
         genericDao = new GenericDao(PickupService.class);
         com.compostcollectors.test.util.Database database = com.compostcollectors.test.util.Database.getInstance();
         database.runSQL("cleandb.sql");
