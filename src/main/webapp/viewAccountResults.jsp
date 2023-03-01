@@ -11,7 +11,7 @@
 <body>
 <h2>Search Results: </h2>
 <table>
-  <thead>Users</thead>
+  <thead>Account</thead>
   <c:forEach var="user" items="${users}">
     <tr>
       <td>First Name: ${user.firstName}</td>
