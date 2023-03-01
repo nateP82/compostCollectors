@@ -5,4 +5,4 @@
 3. Week three - zero hours, working on class work
 4. Week Four - 11 hours
 5. Week 5 - eight hours
-6. Week 6 - 
+6. Week 6 - three hours

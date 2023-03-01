@@ -19,3 +19,12 @@ Lots of updates for the project!
 - Created project tasks to complete 
 - Created design screenshots 
 - Pushed content to my github repo
+## Week 5
+- Created a test database, as well as a "production database" that I will update when the project more complete
+- Created UserDao and PickupService dao classes
+- Wrote unit tests for UserDao and PickupServiceDao classes
+
+## Week 6 
+- Peer reviews, lots of good feedback.
+
+## Week 7
