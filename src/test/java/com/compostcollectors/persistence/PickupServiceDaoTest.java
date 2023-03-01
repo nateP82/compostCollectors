@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PickupServiceDaoTest {
     private final Logger logger = LogManager.getLogger(this.getClass());
     PickupServiceDao dao;
+    GenericDao genericDao;
 
     /**
      * setUp test method
@@ -24,6 +25,7 @@ class PickupServiceDaoTest {
     void setUp() {
         logger.info("Running setup before each test");
         dao = new PickupServiceDao();
+        genericDao = new GenericDao(PickupService.class);
         com.compostcollectors.test.util.Database database = com.compostcollectors.test.util.Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -35,7 +37,7 @@ class PickupServiceDaoTest {
     @Test
     void getAllPickupServicesSuccess() {
         logger.info("Running getAllPickupServices Test");
-        List<PickupService> pickupServices = dao.getAllPickupServices();
+        List<PickupService> pickupServices = genericDao.getAll();
         assertEquals(5, pickupServices.size());
     }
     /**
@@ -44,7 +46,7 @@ class PickupServiceDaoTest {
     @Test
     void getPickupServiceByIdSuccess() {
         logger.info("Running getPickupServiceById test");
-        PickupService retrievedPickupService = dao.getPickupServiceById(2);
+        PickupService retrievedPickupService = (PickupService) genericDao.getById(2);
         assertNotNull(retrievedPickupService);
         assertEquals("Replacement bin requested", retrievedPickupService.getDescription());
     }
@@ -58,9 +60,9 @@ class PickupServiceDaoTest {
         User user = userDao.getUserById(1);
         PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", LocalDate.parse("2023-03-14"), user);
         user.addPickupService(newPickupService);
-        int id = dao.insert(newPickupService);
+        int id = genericDao.insert(newPickupService);
         assertNotEquals(0,id);
-        PickupService insertedPickupService = dao.getPickupServiceById(id);
+        PickupService insertedPickupService = (PickupService) genericDao.getById(id);
         assertTrue(insertedPickupService.equals(newPickupService));
     }
     /**
@@ -69,8 +71,8 @@ class PickupServiceDaoTest {
     @Test
     void deleteSuccess() {
         logger.info("Running deletePickupService test");
-        dao.delete(dao.getPickupServiceById(3));
-        assertNull(dao.getPickupServiceById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
     }
     /**
      * Verifies that a pickupService can be successfully updated
@@ -79,10 +81,10 @@ class PickupServiceDaoTest {
     void updateSuccess() {
         logger.info("Running updatePickupService test");
         String pickupDescription = "Alternate Day for pickup requested";
-        PickupService pickupServiceToUpdate = dao.getPickupServiceById(3);
+        PickupService pickupServiceToUpdate = (PickupService) genericDao.getById(3);
         pickupServiceToUpdate.setDescription(pickupDescription);
-        dao.saveOrUpdate(pickupServiceToUpdate);
-        PickupService retreivedPickupService = dao.getPickupServiceById(3);
+        genericDao.saveOrUpdate(pickupServiceToUpdate);
+        PickupService retreivedPickupService = (PickupService) genericDao.getById(3);
         String newServiceDetails = retreivedPickupService.getDescription();
         logger.debug("Retrieved pickup service", retreivedPickupService);
         assertEquals(pickupDescription, newServiceDetails);
@@ -93,7 +95,7 @@ class PickupServiceDaoTest {
     @Test
     void getByPropertyEqualSuccess() {
         logger.info("Running getByPropertyEqual test");
-        List<PickupService> pickupServices = dao.getByPropertyEqual("description", "Replacement bin requested");
+        List<PickupService> pickupServices = genericDao.getByPropertyEqual("description", "Replacement bin requested");
         assertEquals(1, pickupServices.size());
         assertEquals(2, pickupServices.get(0).getId());
     }
@@ -103,7 +105,7 @@ class PickupServiceDaoTest {
     @Test
     void getByPropertyLikeSuccess() {
         logger.info("Running getByPropertyLike test");
-        List<PickupService> pickupServices = dao.getByPropertyLike("description", "bin");
+        List<PickupService> pickupServices = genericDao.getByPropertyLike("description", "bin");
         assertEquals(3, pickupServices.size());
     }
 }
