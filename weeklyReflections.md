@@ -26,5 +26,6 @@ Lots of updates for the project!
 
 ## Week 6 
 - Peer reviews, lots of good feedback.
+- Changes made to user stories and project tasks based on feedback.
 
 ## Week 7
