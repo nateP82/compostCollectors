@@ -3,7 +3,6 @@ package com.compostcollectors.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.Objects;
 
 /**
@@ -23,8 +22,8 @@ public class PickupService {
     private String description;
     private String address;
 
-    @Column(name = "pickup_date")
-    private LocalDate pickupDate;
+    @Column(name = "pickup_day")
+    private String pickupDay;
     @ManyToOne
     private User user;
 
@@ -39,13 +38,13 @@ public class PickupService {
      *
      * @param description the description of requested pickup
      * @param address     the address of pickup
-     * @param pickupDate  the pickup date
+     * @param pickupDay  day of pickup
      * @param user        the user
      */
-    public PickupService(String description, String address, LocalDate pickupDate, User user) {
+    public PickupService(String description, String address, String pickupDay, User user) {
         this.description = description;
         this.address = address;
-        this.pickupDate = pickupDate;
+        this.pickupDay = pickupDay;
         this.user = user;
     }
 
@@ -108,17 +107,17 @@ public class PickupService {
      *
      * @return the pickup date
      */
-    public LocalDate getPickupDate() {
-        return pickupDate;
+    public String getPickupDay() {
+        return pickupDay;
     }
 
     /**
-     * Sets pickup date.
+     * Sets pickup day.
      *
-     * @param pickupDate the pickup date
+     * @param pickupDay the pickup day
      */
-    public void setPickupDate(LocalDate pickupDate) {
-        this.pickupDate = pickupDate;
+    public void setPickupDay(String pickupDay) {
+        this.pickupDay = pickupDay;
     }
 
     /**
@@ -144,12 +143,12 @@ public class PickupService {
         if (this == o) return true;
         if (!(o instanceof PickupService)) return false;
         PickupService that = (PickupService) o;
-        return getId() == that.getId() && getDescription().equals(that.getDescription()) && getAddress().equals(that.getAddress()) && getPickupDate().equals(that.getPickupDate()) && getUser().equals(that.getUser());
+        return getId() == that.getId() && getDescription().equals(that.getDescription()) && getAddress().equals(that.getAddress()) && getPickupDay().equals(that.getPickupDay()) && getUser().equals(that.getUser());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getDescription(), getAddress(), getPickupDate(), getUser());
+        return Objects.hash(getId(), getDescription(), getAddress(), getPickupDay(), getUser());
     }
 
     @Override
@@ -158,7 +157,7 @@ public class PickupService {
                 "id=" + id +
                 ", description='" + description + '\'' +
                 ", address='" + address + '\'' +
-                ", pickupDate=" + pickupDate +
+                ", pickupDate=" + pickupDay +
                 ", user=" + user +
                 '}';
     }

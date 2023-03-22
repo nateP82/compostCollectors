@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -57,7 +56,7 @@ class PickupServiceDaoTest {
         logger.info("Running insertPickupService test");
         UserDao userDao = new UserDao();
         User user = userDao.getUserById(1);
-        PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", LocalDate.parse("2023-03-14"), user);
+        PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", "Wednesday", user);
         user.addPickupService(newPickupService);
         int id = genericDao.insert(newPickupService);
         assertNotEquals(0,id);
