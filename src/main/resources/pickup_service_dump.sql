@@ -26,13 +26,13 @@ CREATE TABLE `pickup_service` (
   `id` int NOT NULL AUTO_INCREMENT,
   `description` varchar(100) DEFAULT NULL,
   `address` varchar(100) DEFAULT NULL,
-  `pickup_date` date DEFAULT NULL,
+  `pickup_day` varchar(25) DEFAULT NULL,
   `user_id` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `pickup_pk2` (`id`),
   KEY `pickup_service_user_id_fk` (`user_id`),
   CONSTRAINT `pickup_service_user_id_fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `pickup_service` (
 
 LOCK TABLES `pickup_service` WRITE;
 /*!40000 ALTER TABLE `pickup_service` DISABLE KEYS */;
-INSERT INTO `pickup_service` VALUES (1,'Requesting a new compost bin','1223 street','2023-02-24',5),(2,'Replacement bin requested','8910 street','2023-03-02',3),(3,'New pickup requested, missed original pickup','1123 street','2023-02-27',4),(4,'Requesting secondary bin','1323 street','2023-03-03',6),(5,'Special pickup','4567 street','2023-02-24',2);
+INSERT INTO `pickup_service` VALUES (1,'Requesting a new compost bin','1223 street','2023-02-24',5),(2,'Replacement bin requested','8910 street','2023-03-02',3),(3,'New pickup requested, missed original pickup','1123 street','2023-02-27',4),(4,'Requesting secondary bin','1323 street','2023-03-03',6),(5,'Special pickup','4567 street','2023-02-24',2),(113,'Requesting third bin','1029 street','Wednesday',1);
 /*!40000 ALTER TABLE `pickup_service` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-23 12:56:17
+-- Dump completed on 2023-04-19 11:12:48
