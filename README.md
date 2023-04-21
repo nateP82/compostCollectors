@@ -20,5 +20,6 @@ By signing up, users can take advantage of serveral features:
 - Dependency management: Maven
 - CSS: Bootstrap
 - Logging: Log4J2
-- Hosting: TBD
+- Hosting: AWS [latest deployment](http://compostcollectors-env.eba-4wace9wm.us-east-2.elasticbeanstalk.com/)
+- User Account management: AWS Cognito
 - Unit Testing: JUnit
