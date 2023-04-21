@@ -8,34 +8,34 @@
 - [x] Update reflection statement
 
 ## Week 5
-- [ ] Refactoring based on project checkpoint feedback
+- [x] Refactoring based on project checkpoint feedback
 - [ ] Update tech stack dependencies
-- [ ] Verify project configuration for deployment to Tomcat
-- [ ] Update reflection statement
+- [x] Verify project configuration for deployment to Tomcat
+- [x] Update reflection statement
  
 ## Week 6
-- [ ] Create Database
-- [ ] Add users table
-- [ ] Setup database connection details
-- [ ] DAO created with full CRUD capabilities
-- [ ] Full unit testing for DAO with Log4J2
-- [ ] Update reflection statement
+- [x] Create Database
+- [x] Add users table
+- [x] Setup database connection details
+- [x] DAO created with full CRUD capabilities
+- [x] Full unit testing for DAO with Log4J2
+- [x] Update reflection statement
 
 ## Week 7 
-- [ ] Create user account
-- [ ] Create user sign in
-- [ ] Submit individual project checkpoint two requirements
-- [ ] Update reflection statement
+- [x] Create user account
+- [x] Create user sign in
+- [x] Submit individual project checkpoint two requirements
+- [x] Update reflection statement
 
 ## Week 8 
-- [ ] Refactoring based on project checkpoint feedback
+- [x] Refactoring based on project checkpoint feedback
 - [ ] Create profile view
 - [ ] Create edit profile view
 - [ ] Review and reschedule project roadmap
 - [ ] Update reflection statement
 
 ## Week 9
-- [ ] AWS deployment and checkpoint three requirements
+- [x] AWS deployment and checkpoint three requirements
 - [ ] Edit profile view
 - [ ] Unit test coverage update 
 - [ ] Update reflection statement
