@@ -29,13 +29,10 @@
 
 ## Week 8 
 - [x] Refactoring based on project checkpoint feedback
-- [ ] Create profile view
-- [ ] Create edit profile view
-- [ ] Review and reschedule project roadmap
+- [x] Review and reschedule project roadmap
 - [ ] Update reflection statement
 
 ## Week 9
-- [x] AWS deployment and checkpoint three requirements
 - [ ] Edit profile view
 - [ ] Unit test coverage update 
 - [ ] Update reflection statement
@@ -49,7 +46,6 @@
 
 ## Week 11 
 - [ ] Create user contributions page
-- [ ] Implement graph API for user contributions
 - [ ] Update reflection statement
 
 ## Week 12
@@ -59,18 +55,22 @@
 - [ ] Update reflection statement
 
 ## Week 13
+- [x] AWS deployment and checkpoint three requirements
 - [ ] Create About us page
 - [ ] Review and reschedule project roadmap
 - [ ] Update reflection statement
 
 ## Week 14
 - [ ] Refactoring
+- [ ] Implement graph API for user contributions
 - [ ] Individual project code review
 - [ ] Placeholder for rescheduled work
 - [ ] Update reflection statement
 
 ## Week 15
 - [ ] Refactoring and catch up
+- [ ] Create profile view
+- [ ] Create edit profile view
 - [ ] Update reflection statement
 
 ## Week 16
