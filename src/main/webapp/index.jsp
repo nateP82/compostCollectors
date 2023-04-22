@@ -1,11 +1,9 @@
 <%@include file="taglib.jsp"%>
 <html>
 <body>
+<%@include file="head.jsp"%>
 <h2>Compost Collectors</h2>
-<a href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
-<a href="/viewAccount.jsp">View your account</a>
-<a href="/compostcollectors_war/editAccount.jsp">Edit your account</a>
-<a href="/compostcollectors_war/deleteAccount.jsp">Delete your account</a>
+<%@include file="navbar.jsp"%>
 <c:choose>
     <c:when test="${empty userName}">
         <a href = "logIn">Log in</a>
@@ -14,6 +12,7 @@
         <h3>Welcome ${userName}</h3>
     </c:otherwise>
 </c:choose>
-
+<%@include file="boostrap.jsp"%>
 </body>
+<%@include file="footer.jsp"%>
 </html>
