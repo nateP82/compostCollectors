@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <%--
   Created by IntelliJ IDEA.
   User: npeck
@@ -7,11 +8,19 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <title>TEST</title>
-    <a href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
-    <a href="/viewAccount.jsp">View your account</a>
-    <a href="/compostcollectors_war/editAccount.jsp">Edit your account</a>
-    <a href="/compostcollectors_war/deleteAccount.jsp">Delete your account</a>
+    <title>Compost Collectors</title>
+    <a class="nav-link" href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
+    <a class="nav-link" href="/compostcollectors_war/viewAccount.jsp">View your account</a>
+    <a class="nav-link" href="/compostcollectors_war/editAccount.jsp">Edit your account</a>
+    <a class="nav-link" href="/compostcollectors_war/deleteAccount.jsp">Delete your account</a>
+    <c:choose>
+        <c:when test="${empty userName}">
+            <a class="nav-link" href = "logIn">Log in</a>
+        </c:when>
+        <c:otherwise>
+            <h3>Welcome ${userName}</h3>
+        </c:otherwise>
+    </c:choose>
 </nav>
 
 
