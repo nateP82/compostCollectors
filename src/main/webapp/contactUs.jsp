@@ -6,11 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="head.jsp"%>
 <html>
-<head>
-    <title>Contact Us</title>
-</head>
+<%@include file="head.jsp"%>
 <body>
 <h1>Contact Us</h1>
 <form>

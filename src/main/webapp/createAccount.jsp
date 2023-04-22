@@ -7,8 +7,8 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="head.jsp"%>
 <html>
+<%@include file="head.jsp"%>
 <body>
 <h2>Compost Collectors</h2>
 <h3>
