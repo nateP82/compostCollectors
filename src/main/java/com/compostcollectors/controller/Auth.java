@@ -105,7 +105,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             }
         }
         // Verify if user exists in database
-        userId = searchUserDatabse(userName);
+        userId = searchUserDatabase(userName);
         RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
         dispatcher.forward(req, resp);
 
@@ -271,7 +271,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      * Searches the database to see if the user already exists
      * @param userName - name of user attempting to be added
      */
-    public int searchUserDatabse(String userName) {
+    public int searchUserDatabase(String userName) {
         logger.info("searching database for user: " + userName);
         GenericDao userDao = new GenericDao(User.class);
         int id;
