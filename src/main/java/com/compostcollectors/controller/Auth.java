@@ -42,6 +42,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.RSAPublicKeySpec;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
@@ -274,7 +275,13 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         logger.info("searching database for user: " + userName);
         GenericDao userDao = new GenericDao(User.class);
         int id;
-        id = 0;
+        List<User> users = userDao.getByPropertyEqual("userName", userName);
+        if (users.isEmpty()) {
+            User composter = new User();
+            id = userDao.insert(composter);
+        } else {
+            id = users.get(0).getId();
+        }
 
         return id;
     }
