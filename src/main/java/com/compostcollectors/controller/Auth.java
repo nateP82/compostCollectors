@@ -9,6 +9,8 @@ import com.compostcollectors.auth.CognitoJWTParser;
 import com.compostcollectors.auth.CognitoTokenHeader;
 import com.compostcollectors.auth.Keys;
 import com.compostcollectors.auth.TokenResponse;
+import com.compostcollectors.entity.User;
+import com.compostcollectors.persistence.GenericDao;
 import com.compostcollectors.persistence.PropertiesLoader;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -83,6 +85,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String authCode = req.getParameter("code");
         String userName = null;
+        int userId = 0;
 
         if (authCode == null) {
             //TODO forward to an error page or back to the login
@@ -100,6 +103,8 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                 //TODO forward to an error page
             }
         }
+        // Verify if user exists in database
+        userId = searchUserDatabse(userName);
         RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
         dispatcher.forward(req, resp);
 
@@ -258,6 +263,20 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         } catch (Exception e) {
             logger.error("Error loading properties" + e.getMessage(), e);
         }
+    }
+
+    /**
+     * searchUserDatabase method
+     * Searches the database to see if the user already exists
+     * @param userName - name of user attempting to be added
+     */
+    public int searchUserDatabse(String userName) {
+        logger.info("searching database for user: " + userName);
+        GenericDao userDao = new GenericDao(User.class);
+        int id;
+        id = 0;
+
+        return id;
     }
 }
 
