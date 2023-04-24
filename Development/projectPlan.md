@@ -1,5 +1,7 @@
 # Project Roadmap
 
+(v2) - notates features for the next version of the app
+
 ## Week 4 
 - [x] Update problem statement
 - [x] Finish project roadmap
@@ -9,7 +11,7 @@
 
 ## Week 5
 - [x] Refactoring based on project checkpoint feedback
-- [ ] Update tech stack dependencies
+- [x] Update tech stack dependencies
 - [x] Verify project configuration for deployment to Tomcat
 - [x] Update reflection statement
  
@@ -33,13 +35,13 @@
 - [ ] Update reflection statement
 
 ## Week 9
-- [ ] Edit profile view
+- [x] Edit profile view(v2)
 - [ ] Unit test coverage update 
 - [ ] Update reflection statement
 
 ## Week 10
 - [ ] Refactor based on project checkpoint feedback
-- [ ] Create pickup schedule page
+- [x] Create pickup schedule page(v2)
 - [ ] Start work on pickup request form page
 - [ ] Start work on request form for a new or replacement compost bin
 - [ ] Update reflection statement
