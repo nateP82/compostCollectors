@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <%--
   Created by IntelliJ IDEA.
   User: npeck
@@ -5,12 +6,12 @@
   Time: 2:29 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@include file="taglib.jsp"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<c:import url="head.jsp"/>
 <body>
-<h2>Search Results: </h2>
-<table>
+<h2 class="text-center">Search Results: </h2>
+<table class="table table-striped">
   <thead>Account</thead>
   <c:forEach var="user" items="${users}">
     <tr>
