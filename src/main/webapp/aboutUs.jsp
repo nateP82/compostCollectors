@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@include file="head.jsp"%>
+<c:import url="head.jsp"/>
 <body>
 <h1>About Us</h1>
 </body>
