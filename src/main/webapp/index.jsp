@@ -1,11 +1,11 @@
 <%@include file="taglib.jsp"%>
 <html>
 <body>
-<%@include file="head.jsp"%>
+<c:import url="head.jsp"/>
 <h2>Compost Collectors</h2>
-<%@include file="navbar.jsp"%>
+<c:import url="navbar.jsp"/>
 
-<%@include file="boostrap.jsp"%>
+<c:import url="boostrap.jsp"/>
 </body>
-<%@include file="footer.jsp"%>
+<c:import url="footer.jsp"/>
 </html>
