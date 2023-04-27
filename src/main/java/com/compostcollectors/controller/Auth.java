@@ -277,7 +277,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         int id;
         List<User> users = userDao.getByPropertyEqual("userName", userName);
         if (users.isEmpty()) {
-            logger.info("No users found, adding new user to database " + userName);
+            logger.info("No users found, adding " + userName +  " to database.");
             User composter = new User();
             id = userDao.insert(composter);
         } else {
