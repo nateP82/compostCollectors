@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<title>Compost Collectors</title>
+<c:import url="head.jsp" />
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <a class="nav-link" href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
     <a class="nav-link" href="/compostcollectors_war/viewAccount.jsp">View your account</a>
@@ -17,10 +17,11 @@
     <a class="nav-link" href="/compostcollectors_war/materials.jsp">Accpeted Materials</a>
     <c:choose>
         <c:when test="${empty userName}">
-            <a class="nav-link" href = "logIn">Log in</a>
+            <a class="nav-link" href ="logIn">Log in</a>
         </c:when>
         <c:otherwise>
             <h3>Welcome ${userName}</h3>
+            <a class="nav-link" href="logOut">Log out</a>
         </c:otherwise>
     </c:choose>
 </nav>
