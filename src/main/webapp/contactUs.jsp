@@ -9,7 +9,7 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
-<h1>Contact Us</h1>
+<h1 class="text-center">Contact Us</h1>
 <form>
 
 </form>

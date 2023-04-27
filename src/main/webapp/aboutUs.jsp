@@ -9,6 +9,6 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
-<h1>About Us</h1>
+<h1 class="text-center">About Us</h1>
 </body>
 </html>

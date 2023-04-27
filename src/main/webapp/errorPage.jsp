@@ -9,6 +9,6 @@
 <html>
 <c:import url="head.jsp" />
 <body>
-
+<h1>ERROR!</h1>
 </body>
 </html>
