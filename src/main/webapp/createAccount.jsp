@@ -10,7 +10,7 @@
 <html>
 <%@include file="head.jsp"%>
 <body>
-<h2>Compost Collectors</h2>
+<h2 class="text-center">Compost Collectors</h2>
 <h3>
     Create User Account
 </h3>
