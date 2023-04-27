@@ -9,12 +9,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:import url="head.jsp" />
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="nav-link" href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
-    <a class="nav-link" href="/compostcollectors_war/viewAccount.jsp">View your account</a>
-    <a class="nav-link" href="/compostcollectors_war/editAccount.jsp">Edit your account</a>
-    <a class="nav-link" href="/compostcollectors_war/aboutUs.jsp">About Us</a>
-    <a class="nav-link" href="/compostcollectors_war/contactUs.jsp">Contact Us</a>
-    <a class="nav-link" href="/compostcollectors_war/materials.jsp">Accpeted Materials</a>
+    <div class="container-fluid justify-content-end">
+    <a class="nav-link p-2" href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
+    <a class="nav-link p-2" href="/compostcollectors_war/viewAccount.jsp">View your account</a>
+    <a class="nav-link p-2" href="/compostcollectors_war/editAccount.jsp">Edit your account</a>
+    <a class="nav-link p-2" href="/compostcollectors_war/aboutUs.jsp">About Us</a>
+    <a class="nav-link p-2" href="/compostcollectors_war/contactUs.jsp">Contact Us</a>
+    <a class="nav-link p-2" href="/compostcollectors_war/materials.jsp">Accpeted Materials</a>
     <c:choose>
         <c:when test="${empty userName}">
             <a class="nav-link" href ="logIn">Log in</a>
@@ -24,6 +25,7 @@
             <a class="nav-link" href="logOut">Log out</a>
         </c:otherwise>
     </c:choose>
+    </div>
 </nav>
 
 
