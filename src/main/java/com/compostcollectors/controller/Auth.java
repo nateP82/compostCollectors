@@ -24,6 +24,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.core.Request;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
@@ -89,7 +90,8 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         int userId = 0;
 
         if (authCode == null) {
-            //TODO forward to an error page or back to the login
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/errorPage.jsp");
+            dispatcher.forward(req, resp);
         } else {
             HttpRequest authRequest = buildAuthRequest(authCode);
             try {
@@ -98,10 +100,12 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                 req.setAttribute("userName", userName);
             } catch (IOException e) {
                 logger.error("Error getting or validating the token: " + e.getMessage(), e);
-                //TODO forward to an error page
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/errorPage.jsp");
+                dispatcher.forward(req, resp);
             } catch (InterruptedException e) {
                 logger.error("Error getting token from Cognito oauth url " + e.getMessage(), e);
-                //TODO forward to an error page
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/errorPage.jsp");
+                dispatcher.forward(req, resp);
             }
         }
         // Verify if user exists in database
