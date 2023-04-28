@@ -1,7 +1,7 @@
 # Project tasks
 
 ## Update dependencies
-- [ ] update the list of technologies used for the project
+- [x] update the list of technologies used for the project
 
 ## Create Database
 - [x] Setup test and "production" databases in MySQL
@@ -9,8 +9,8 @@
 - [x] Add mock data: users
 
 ## User sign in
-- [ ] Create sign in form
-- [ ] Create User
+- [x] ~~Create sign in form~~ handled by aws cognito
+- [x] ~~Create User~~  handeled by aws cognito
 - [ ] Add user to database
 - [ ] Create Sign Out
 - [ ] Unit tests for adding a user
