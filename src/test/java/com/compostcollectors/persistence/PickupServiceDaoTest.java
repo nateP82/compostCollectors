@@ -36,6 +36,7 @@ class PickupServiceDaoTest {
     void getAllPickupServicesSuccess() {
         logger.info("Running getAllPickupServices Test");
         List<PickupService> pickupServices = genericDao.getAll();
+        logger.debug("all pickup services", pickupServices);
         assertEquals(5, pickupServices.size());
     }
     /**
@@ -46,6 +47,7 @@ class PickupServiceDaoTest {
         logger.info("Running getPickupServiceById test");
         PickupService retrievedPickupService = (PickupService) genericDao.getById(2);
         assertNotNull(retrievedPickupService);
+        logger.debug("retrieved pickup service by Id", retrievedPickupService);
         assertEquals("Replacement bin requested", retrievedPickupService.getDescription());
     }
     /**
@@ -58,6 +60,8 @@ class PickupServiceDaoTest {
         User user = userDao.getUserById(1);
         PickupService newPickupService = new PickupService("Requesting third bin", "1029 street", "Wednesday", user);
         user.addPickupService(newPickupService);
+        logger.debug("user with new pickup service", user);
+        logger.debug("new pickup service", newPickupService);
         int id = genericDao.insert(newPickupService);
         assertNotEquals(0,id);
         PickupService insertedPickupService = (PickupService) genericDao.getById(id);
@@ -82,6 +86,7 @@ class PickupServiceDaoTest {
         PickupService pickupServiceToUpdate = (PickupService) genericDao.getById(3);
         pickupServiceToUpdate.setDescription(pickupDescription);
         genericDao.saveOrUpdate(pickupServiceToUpdate);
+        logger.debug("pickup service after update", pickupServiceToUpdate);
         PickupService retreivedPickupService = (PickupService) genericDao.getById(3);
         String newServiceDetails = retreivedPickupService.getDescription();
         logger.debug("Retrieved pickup service", retreivedPickupService);
@@ -94,6 +99,7 @@ class PickupServiceDaoTest {
     void getByPropertyEqualSuccess() {
         logger.info("Running getByPropertyEqual test");
         List<PickupService> pickupServices = genericDao.getByPropertyEqual("description", "Replacement bin requested");
+        logger.debug("pickup service list equal to description: Replacement bin requested", pickupServices);
         assertEquals(1, pickupServices.size());
         assertEquals(2, pickupServices.get(0).getId());
     }
@@ -104,6 +110,7 @@ class PickupServiceDaoTest {
     void getByPropertyLikeSuccess() {
         logger.info("Running getByPropertyLike test");
         List<PickupService> pickupServices = genericDao.getByPropertyLike("description", "bin");
+        logger.debug("list of services containing the word bin", pickupServices);
         assertEquals(3, pickupServices.size());
     }
 }
