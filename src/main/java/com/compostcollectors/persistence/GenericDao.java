@@ -44,7 +44,7 @@ public class GenericDao<T> {
      */
     public void delete(T entity) {
         Session session = getSession();
-        Transaction transaction = session.beginTransaction();
+        Transaction transaction = getTransaction(session);
         session.delete(entity);
         transaction.commit();
         session.close();
@@ -55,7 +55,7 @@ public class GenericDao<T> {
      */
     public List<T> getAll() {
         Session session = getSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaBuilder builder = getCriteriaBuilder(session);
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
@@ -68,7 +68,7 @@ public class GenericDao<T> {
      */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
-        Transaction transaction = session.beginTransaction();
+        Transaction transaction = getTransaction(session);
         session.saveOrUpdate(entity);
         transaction.commit();
         session.close();
@@ -80,7 +80,7 @@ public class GenericDao<T> {
     public int insert(T entity) {
         int id = 0;
         Session session = getSession();
-        Transaction transaction = session.beginTransaction();
+        Transaction transaction = getTransaction(session);
         id = (int)session.save(entity);
         transaction.commit();
         session.close();
@@ -95,7 +95,7 @@ public class GenericDao<T> {
 
         logger.debug("Searching for order with " + property + " = " + value);
 
-        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaBuilder builder = getCriteriaBuilder(session);
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         query.select(root).where(builder.equal(root.get(property), value));
@@ -112,7 +112,7 @@ public class GenericDao<T> {
 
         logger.debug("Searching for order with {} = {}",  property, value);
 
-        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaBuilder builder = getCriteriaBuilder(session);
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         Expression<String> propertyPath = root.get(property);
@@ -131,5 +131,26 @@ public class GenericDao<T> {
      */
     private Session getSession() {
         return SessionFactoryProvider.getSessionFactory().openSession();
+    }
+
+    /**
+     * getCriteriaBuilder method
+     * Creates a CriteriaBuilder objet
+     * @param session
+     * @return builder object
+     */
+    private CriteriaBuilder getCriteriaBuilder(Session session) {
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        return  builder;
+    }
+
+    /**
+     * getTransaction method
+     * Takes a session object and returns a Transaction object
+     * @param session
+     * @return Transaction object
+     */
+    private Transaction getTransaction(Session session) {
+        return session.beginTransaction();
     }
 }
