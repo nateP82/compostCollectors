@@ -14,12 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CompostingAPIDaoTest {
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Test
-    public void testCompostingAPIJSON() throws Exception {
+    public void retrieveSerivceDescriptionSuccess() throws Exception {
         logger.info("Running the JSON api access point test");
-        Client client = ClientBuilder.newClient();
-        WebTarget target =
-                client.target("http://compostingapi-env.eba-x3jcxyuh.us-east-2.elasticbeanstalk.com/composting/servicesV1/json");
-        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        assertEquals("???", response);
+        CompostingAPIDao compostDao = new CompostingAPIDao();
+        assertEquals("A guide that will show you what are compostable materials and what should not be added to your compost bin", compostDao.getService().getDescription());
     }
 }
