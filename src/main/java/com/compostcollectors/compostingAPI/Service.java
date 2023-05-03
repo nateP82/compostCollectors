@@ -72,6 +72,12 @@ public class Service{
 		return id;
 	}
 
+	/**
+	 * equals method
+	 * @param o an object parameter passed for comparison
+	 * @return - an object based on an Id
+	 */
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -80,11 +86,20 @@ public class Service{
 		return getId() == service.getId() && getName().equals(service.getName()) && getDescription().equals(service.getDescription());
 	}
 
+	/**
+	 * hashCode
+	 * @return int
+	 */
 	@Override
 	public int hashCode() {
 		return Objects.hash(getName(), getDescription(), getId());
 	}
 
+	/**
+	 * toString method
+	 * returns a string of information about a Service object
+	 * @return Service object
+	 */
 	@Override
  	public String toString(){
 		return 

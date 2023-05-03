@@ -7,7 +7,16 @@ import javax.ws.rs.core.MediaType;
 import com.compostcollectors.compostingAPI.Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * CompostingAPIDao class
+ * This class represents the Composting API access point for an individual service.
+ */
 public class CompostingAPIDao {
+    /**
+     * getService
+     * Method that connects to an API endpoint, and returns a specific service description based on an Id.
+     * @return service - A specific service based on an Id.
+     */
     Service getService() {
         Client client = ClientBuilder.newClient();
         WebTarget target =
