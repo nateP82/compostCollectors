@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <%--
   Created by IntelliJ IDEA.
   User: npeck
@@ -7,7 +8,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<c:import url="head.jsp"/>
 <body>
-<h2>Update your user account</h2>
+<h2 class="text-center">Update your user account</h2>
 </body>
 </html>
