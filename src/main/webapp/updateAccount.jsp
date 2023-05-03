@@ -11,5 +11,33 @@
 <c:import url="head.jsp"/>
 <body>
 <h2 class="text-center">Update your user account</h2>
+<div class="container-fluid">
+    <form action="" class="form-group" method="PUT">
+        <div class="form-group col-4">
+            <label class="col-sm-4" for="firstName">First Name:</label>
+            <input class="form-control" id="firstName"  name="firstName" type="text">
+        </div>
+        <div class="form-group col-4">
+            <label for="lastName">Last Name:</label>
+            <input class="form-control" id="lastName"  name="lastName" type="text">
+        </div>
+        <div class="form-group col-4">
+            <label for="username">Username:</label>
+            <input class="form-control" id="username"  name="username" type="text">
+        </div>
+        <div class="form-group col-4">
+            <label for="email">Email:</label>
+            <input class="form-control" id="email"  name="email" type="text">
+        </div>
+        <div class="form-group col-4">
+            <label for="password">Password:</label>
+            <input class="form-control" id="password"  name="password" type="text">
+        </div>
+        <div class="form-group col-4">
+            <label for="address">Address:</label>
+            <input class="form-control" id="address"  name="address" type="text">
+        </div>
+    </form>
+</div>
 </body>
 </html>
