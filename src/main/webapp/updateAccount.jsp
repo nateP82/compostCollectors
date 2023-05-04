@@ -12,7 +12,7 @@
 <body>
 <h2 class="text-center">Update your user account</h2>
 <div class="container-fluid">
-    <form action="" class="form-group" method="PUT">
+    <form action="updateAccount" class="form-group" method="POST">
         <div class="form-group col-4">
             <label class="col-sm-4" for="firstName">First Name:</label>
             <input class="form-control" id="firstName"  name="firstName" type="text">
@@ -36,6 +36,9 @@
         <div class="form-group col-4">
             <label for="address">Address:</label>
             <input class="form-control" id="address"  name="address" type="text">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary my-3" type="submit" name="submit" value="Update Account">Update</button>
         </div>
     </form>
 </div>
