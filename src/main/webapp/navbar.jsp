@@ -22,7 +22,7 @@
         </c:when>
         <c:otherwise>
             <h3>Welcome ${userName}</h3>
-            <a class="nav-link" href="logOut">Log out</a>
+            <a class="nav-link" href="logOut"><button class="btn btn-primary" type="submit">Log out</button></a>
         </c:otherwise>
     </c:choose>
     </div>
