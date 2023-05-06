@@ -1,6 +1,7 @@
 package com.compostcollectors.controller;
 
 import com.compostcollectors.entity.User;
+import com.compostcollectors.persistence.GenericDao;
 import com.compostcollectors.persistence.UserDao;
 
 import javax.servlet.ServletException;
@@ -24,14 +25,14 @@ public class CreateAccount extends HttpServlet {
      * Method inserts a new user to the database
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserDao userDao = new UserDao();
+        GenericDao dao = new GenericDao(User.class);
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String address = request.getParameter("address");
-        User user = new User(firstName, lastName, username, email, password, address, 0);
-        request.setAttribute("user", userDao.insert(user));
+        User composter = new User(firstName, lastName, username, email, password, address, 0);
+        request.setAttribute("user", dao.insert(composter));
     }
 }

@@ -10,8 +10,8 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
-<h2 class="text-center">Update your user account</h2>
-<a href="index.jsp">Home</a>
+<h2 class="text-center">Please Update your user account information</h2>
+<a href="index.jsp"><button class="btn btn-primary my-3 p-2">Home</button></a>
 <div class="container-fluid">
     <form action="updateAccount" class="form-group" method="POST">
         <div class="form-group col-4">
