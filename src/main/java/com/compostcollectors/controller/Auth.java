@@ -115,7 +115,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         // Add userId and userName to session
 //        HttpSession session = req.getSession();
 //        req.setAttribute("userId", userId);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("updateAccount.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
         dispatcher.forward(req, resp);
 
     }
