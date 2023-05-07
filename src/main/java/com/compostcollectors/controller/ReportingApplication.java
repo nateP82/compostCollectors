@@ -4,7 +4,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.*;
 
-@ApplicationPath("/reports")
+@ApplicationPath("/reporting")
 public class ReportingApplication extends Application {
     //The method returns a non-empty collection with classes, that must be included in the published JAX-RS application
     @Override

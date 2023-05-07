@@ -4,7 +4,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
-@Path("/report")
+@Path("/reports")
 public class Report {
     // The Java method will process HTTP GET requests
     @GET
