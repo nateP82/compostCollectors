@@ -12,7 +12,7 @@
 <body>
 <h2 class="text-center">View Reports</h2>
 <c:import url="navbar.jsp"/>
-<form action="#" method="GET">
+<form action="reportingData" method="GET">
     <table>
         <tbody>
         <tr>

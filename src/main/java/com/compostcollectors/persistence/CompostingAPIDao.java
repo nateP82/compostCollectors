@@ -31,5 +31,19 @@ public class CompostingAPIDao {
         }
         return service;
     }
+    public Service getServiceDetailById() {
+        Client client = ClientBuilder.newClient();
+        WebTarget target =
+                client.target("http://compostingapi-env.eba-x3jcxyuh.us-east-2.elasticbeanstalk.com/composting/servicesV2/8/json");
+        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper = new ObjectMapper();
+        Service serviceDetail = null;
+        try {
+            serviceDetail = mapper.readValue(response, Service.class);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return serviceDetail;
+    }
 
 }

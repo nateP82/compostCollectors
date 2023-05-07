@@ -16,7 +16,6 @@
     <a class="nav-link p-2" href="/compostcollectors_war/aboutUs.jsp">About Us</a>
     <a class="nav-link p-2" href="/compostcollectors_war/contactUs.jsp">Contact Us</a>
     <a class="nav-link p-2" href="/compostcollectors_war/materials.jsp">Accpeted Materials</a>
-        <a class="nav-link p-2" href="/compostcollectors_war/viewReports.jsp">View Your Reports</a>
     <c:choose>
         <c:when test="${empty userName}">
             <a class="nav-link" href ="logIn">Log in</a>
