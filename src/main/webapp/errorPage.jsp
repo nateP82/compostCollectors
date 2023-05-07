@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <%--
   Created by IntelliJ IDEA.
   User: npeck
@@ -9,6 +10,7 @@
 <html>
 <c:import url="head.jsp" />
 <body>
-<h1>ERROR!</h1>
+<h1 class="text-center">ERROR!</h1>
 </body>
+<c:import url="footer.jsp"/>
 </html>
