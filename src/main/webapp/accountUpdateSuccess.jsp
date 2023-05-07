@@ -10,8 +10,9 @@
 <html>
 <c:import url="head.jsp" />
 <body>
+<c:import url="navbar.jsp"/>
 <div class="card">
-        <h4>Card-Title</h4>
+        <h4>Account Updated Successfully</h4>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">First Name:</li>
                 <li class="list-group-item">Last Name:</li>

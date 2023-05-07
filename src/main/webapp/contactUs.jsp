@@ -9,6 +9,7 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
+<c:import url="navbar.jsp"/>
 <h1 class="text-center">Contact Us</h1>
 <form>
 

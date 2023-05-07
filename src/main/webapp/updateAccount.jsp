@@ -10,6 +10,7 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
+<c:import url="navbar.jsp"/>
 <h2 class="text-center">Please Update your user account information</h2>
 <a href="index.jsp"><button class="btn btn-primary my-3 p-2">Home</button></a>
 <div class="container-fluid">

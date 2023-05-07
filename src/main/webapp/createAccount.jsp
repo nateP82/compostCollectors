@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <%--
   Created by IntelliJ IDEA.
   User: npeck
@@ -8,8 +9,9 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@include file="head.jsp"%>
+<c:import url="head.jsp"/>
 <body>
+<c:import url="navbar.jsp"/>
 <h2 class="text-center">Compost Collectors</h2>
 <h3>
     Create User Account

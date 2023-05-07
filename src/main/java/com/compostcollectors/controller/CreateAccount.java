@@ -2,7 +2,6 @@ package com.compostcollectors.controller;
 
 import com.compostcollectors.entity.User;
 import com.compostcollectors.persistence.GenericDao;
-import com.compostcollectors.persistence.UserDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

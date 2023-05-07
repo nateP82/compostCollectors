@@ -10,6 +10,7 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
+<c:import url="navbar.jsp"/>
 <h1 class="text-center">Materials</h1>
 <div class="row">
     <div class="col-sm-6 mb-3 mb-sm-0">

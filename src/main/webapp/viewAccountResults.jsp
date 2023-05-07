@@ -10,6 +10,7 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
+<c:import url="navbar.jsp"/>
 <h2 class="text-center">Search Results: </h2>
 <table class="table table-striped">
   <thead>Account</thead>

@@ -12,7 +12,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -46,15 +45,4 @@ public class ReportingData extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/reportingResults.jsp");
         dispatcher.forward(request, response);
     }
-//
-//    /**
-//     * getRandomId method
-//     * gets a random number for returned service records
-//     * @return a number between 1 and 10 that
-//     */
-//    public int getRandomId() {
-//        int randomIdForAPI = (int) Math.floor(Math.random());
-//
-//        return randomIdForAPI;
-//    }
 }

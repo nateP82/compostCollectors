@@ -1,3 +1,4 @@
+<%@include file="taglib.jsp"%>
 <%--
   Created by IntelliJ IDEA.
   User: npeck
@@ -9,6 +10,7 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
+<c:import url="navbar.jsp"/>
 <h1 class="text-center">About Us</h1>
 </body>
 </html>
