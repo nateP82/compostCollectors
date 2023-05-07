@@ -1,5 +1,8 @@
 package com.compostcollectors.controller;
 
+import com.compostcollectors.compostingAPI.Material;
+import com.compostcollectors.compostingAPI.Period;
+import com.compostcollectors.compostingAPI.Price;
 import com.compostcollectors.compostingAPI.Service;
 import com.compostcollectors.persistence.CompostingAPIDao;
 
@@ -28,9 +31,18 @@ public class ReportingData extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         CompostingAPIDao composter = new CompostingAPIDao();
+        Material materialDetail;
+        Period periodDetail;
+        Price priceDetail;
         Service serviceDetail;
+        materialDetail = composter.getMaterialDetailById();
+        periodDetail = composter.getPeriodDetailById();
         serviceDetail = composter.getServiceDetailById();
+        priceDetail = composter.getPriceDetailById();
+        request.setAttribute("materialDetail", materialDetail);
         request.setAttribute("serviceDetail", serviceDetail);
+        request.setAttribute("periodDetail", periodDetail);
+        request.setAttribute("priceDetail", priceDetail);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/reportingResults.jsp");
         dispatcher.forward(request, response);
     }

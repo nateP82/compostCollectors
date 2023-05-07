@@ -10,35 +10,19 @@
 <html>
 <c:import url="head.jsp"/>
 <body>
-<h2 class="text-center">View Reports</h2>
 <c:import url="navbar.jsp"/>
+<h2 class="text-center">View Reports</h2>
 <form action="reportingData" method="GET">
     <table>
         <tbody>
         <tr>
             <td>
-    <label>View your Materials report</label>
+    <label>View your Composting report</label>
     <button class="btn btn-primary mb-3" type="submit">View Report</button>
             </td>
         </tr>
         <tr>
             <td>
-    <label>View your Time report</label>
-    <button class="btn btn-primary mb-3" type="submit">View Report</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-    <label>View your Price report</label>
-    <button class="btn btn-primary mb-3" type="submit">View Report</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-    <label>View your Service report</label>
-    <button class="btn btn-primary mb-3" type="submit">View Report</button>
-            </td>
-        </tr>
         </tbody>
     </table>
 </form>
