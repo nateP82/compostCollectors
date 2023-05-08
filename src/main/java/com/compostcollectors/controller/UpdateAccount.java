@@ -25,8 +25,12 @@ public class UpdateAccount extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
-     * method doGet
-     * Method finds and returns a specific user from the database
+     * method doPost
+     * Checks if the user already exists in the database and adds them if they do not.
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         logger.info("In the doGet method for updating a user account.");
@@ -40,7 +44,7 @@ public class UpdateAccount extends HttpServlet {
         String address = request.getParameter("address");
         int binWeight = 0;
         User composter = new User(firstName, lastName, username, email, password, address, binWeight);
-//        genericDao.saveOrUpdate(composter);
+        genericDao.insert(composter);
         request.setAttribute("user", composter);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/accountUpdateSuccess.jsp");
         dispatcher.forward(request, response);

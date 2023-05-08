@@ -1,7 +1,7 @@
 package com.compostcollectors.controller;
 
 import com.compostcollectors.entity.User;
-import com.compostcollectors.persistence.UserDao;
+import com.compostcollectors.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,9 +25,12 @@ public class ViewAccount extends HttpServlet {
      * Method finds and returns a specific user from the database
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserDao userDao = new UserDao();
-        request.getParameter("submit");
-        request.setAttribute("users", userDao.getUsersByLastName(request.getParameter("searchUsers")));
+        GenericDao genericDao = new GenericDao(User.class);
+        if(request.getParameter("submit").equals("searchAccount")) {
+            request.setAttribute("users", genericDao.getByPropertyLike("lastName", request.getParameter("searchLastName")));
+        } else {
+            request.setAttribute("users", genericDao.getAll());
+        }
         RequestDispatcher dispatcher = request.getRequestDispatcher("/viewAccountResults.jsp");
         dispatcher.forward(request, response);
     }

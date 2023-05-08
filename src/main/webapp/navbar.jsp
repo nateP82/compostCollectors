@@ -12,7 +12,7 @@
     <div class="container-fluid justify-content-end">
     <a class="nav-link p-2" href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>
     <a class="nav-link p-2" href="/compostcollectors_war/viewAccount.jsp">View your account</a>
-    <a class="nav-link p-2" href="/compostcollectors_war/editAccount.jsp">Edit your account</a>
+    <a class="nav-link p-2" href="/compostcollectors_war/updateAccount.jsp">Update your account</a>
     <a class="nav-link p-2" href="/compostcollectors_war/aboutUs.jsp">About Us</a>
     <a class="nav-link p-2" href="/compostcollectors_war/contactUs.jsp">Contact Us</a>
     <a class="nav-link p-2" href="/compostcollectors_war/materials.jsp">Accpeted Materials</a>

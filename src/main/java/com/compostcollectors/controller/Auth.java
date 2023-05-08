@@ -88,7 +88,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String authCode = req.getParameter("code");
         String userName = null;
-//        int userId = 0;
+        int userId = 0;
 
         if (authCode == null) {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/errorPage.jsp");
@@ -110,11 +110,11 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             }
         }
         // Verify if user exists in database
-//        userId = searchUserDatabase(userName);
+        userId = searchUserDatabase(userName);
 
         // Add userId and userName to session
-//        HttpSession session = req.getSession();
-//        req.setAttribute("userId", userId);
+        HttpSession session = req.getSession();
+        req.setAttribute("userId", userId);
         RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
         dispatcher.forward(req, resp);
 
@@ -287,20 +287,20 @@ public class Auth extends HttpServlet implements PropertiesLoader {
      * Searches the database to see if the user already exists
      * @param userName - name of user attempting to be added
      */
-//    public int searchUserDatabase(String userName) {
-//        logger.info("searching database for user: " + userName);
-//        GenericDao userDao = new GenericDao(User.class);
-//        int id;
-//        List<User> users = userDao.getByPropertyEqual("userName", userName);
-//        if (users.isEmpty()) {
-//            logger.info("No users found, adding " + userName +  " to database.");
-//            User newComposter = new User(null, null, userName, null, null, null, 0);
-//            id = userDao.insert(newComposter);
-//        } else {
-//            id = users.get(0).getId();
-//        }
-//
-//        return id;
-//    }
+    public int searchUserDatabase(String userName) {
+        logger.info("searching database for user: " + userName);
+        GenericDao userDao = new GenericDao(User.class);
+        int id;
+        List<User> users = userDao.getByPropertyEqual("userName", userName);
+        if (users.isEmpty()) {
+            logger.info("No users found, adding " + userName +  " to database.");
+            User newComposter = new User(null, null, userName, null, null, null, 0);
+            id = userDao.insert(newComposter);
+        } else {
+            id = users.get(0).getId();
+        }
+
+        return id;
+    }
 }
 
