@@ -22,6 +22,7 @@
       <td>Email: ${user.email}</td>
       <td>Address: ${user.address}</td>
       <td><a href="/compostcollectors_war/updateAccount.jsp">Edit</a></td>
+      <td><a href="/compostcollectors_war/viewReports.jsp">View Report Data</a></td>
     </tr>
   </c:forEach>
 </table>
