@@ -19,6 +19,7 @@
 6. Week 6 - three hours
    1. Updated DAO classes
    2. Created/updated JSP files, added servlets for some application work and logic
+   3. Unit testing added for DAO classes
 7. Week 7 - 1 hour
    1. Time log updates, small cleanup of classes and jsps
 8. Week 8 - 0 hours
