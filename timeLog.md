@@ -48,3 +48,7 @@
     4. JSP styling
     5. Deployment to AWS environment
     6. Added sign out via AWS cognito
+16. Week 16
+    1. Final deployment
+    2. Create and record presentation
+    3. Final self evaluation
