@@ -55,6 +55,12 @@ public class CompostingAPIDao {
         }
         return serviceDetail;
     }
+
+    /**
+     * getMaterialDetailById
+     * Accesses the com.Posting API endpoint for Materials based on an id.
+     * @return materialDetail
+     */
     public Material getMaterialDetailById() {
         Client client = ClientBuilder.newClient();
         WebTarget target =
@@ -69,6 +75,12 @@ public class CompostingAPIDao {
         }
         return materialDetail;
     }
+
+    /**
+     * getPeriodDetailById method
+     * Accesses the com.Posting API endpoint for Periods of time based on an id.
+     * @return PeriodDetail
+     */
     public Period getPeriodDetailById() {
         Client client = ClientBuilder.newClient();
         WebTarget target =
@@ -83,6 +95,12 @@ public class CompostingAPIDao {
         }
         return periodDetail;
     }
+
+    /**
+     * getPriceById method
+     * Accesses the com.Posting API endpoint for Prices based on an id.
+     * @return priceDetail
+     */
     public Price getPriceDetailById() {
         Client client = ClientBuilder.newClient();
         WebTarget target =
