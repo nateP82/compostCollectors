@@ -5,7 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
 /**
- * The type Service.
+ * Service class
+ * ROBO POJO generated class based on com.Posting API response for a Service endpoint
+ * ex: http://compostingapi-env.eba-x3jcxyuh.us-east-2.elasticbeanstalk.com/composting/servicesv2/id/json
  */
 public class Service{
 

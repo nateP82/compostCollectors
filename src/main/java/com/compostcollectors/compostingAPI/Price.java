@@ -3,7 +3,9 @@ package com.compostcollectors.compostingAPI;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * The type Price.
+ * Price class
+ * ROBO POJO generated class based on com.Posting API response for a Price endpoint.
+ * ex: http://compostingapi-env.eba-x3jcxyuh.us-east-2.elasticbeanstalk.com/composting/pricesv2/id/json
  */
 public class Price{
 

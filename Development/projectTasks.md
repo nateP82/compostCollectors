@@ -11,7 +11,7 @@
 ## User sign in
 - [x] ~~Create sign in form~~ handled by aws cognito
 - [x] ~~Create User~~  handeled by aws cognito
-- [ ] Add user to database(WIP)
+- [x] Add user to database(v2)
 - [x] Create Sign Out
 - [x] Unit tests for adding a user
 

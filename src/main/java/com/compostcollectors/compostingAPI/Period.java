@@ -3,7 +3,9 @@ package com.compostcollectors.compostingAPI;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * The type Period.
+ * Period class
+ * ROBO POJO generated class based on com.Posting API response for a time Period endpoint.
+ * ex: http://compostingapi-env.eba-x3jcxyuh.us-east-2.elasticbeanstalk.com/composting/periodsv2/id/json
  */
 public class Period{
 
