@@ -11,6 +11,7 @@
 <c:import url="head.jsp" />
 <body>
 <h1 class="text-center">ERROR!</h1>
+<p>An error occurred, please try again.</p>
 </body>
 <c:import url="footer.jsp"/>
 </html>
