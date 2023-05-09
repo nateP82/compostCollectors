@@ -18,8 +18,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class CompostingAPIDao {
     /**
      * getService
-     * Method that connects to an API endpoint, and returns a specific service description based on an Id.
-     * @return service - A specific service based on an Id.
+     * Method that connects to an API endpoint, and returns a specific service description
+     * @return service - A specific service from the composting API.
      */
     Service getService() {
         Client client = ClientBuilder.newClient();

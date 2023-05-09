@@ -27,6 +27,7 @@ public class CompostingAPIDaoTest {
         String returnedServiceDescription = "A guide that will show you what are compostable materials and what should not be added to your compost bin";
         assertTrue(serviceDescription.equals(returnedServiceDescription));
     }
+    //TODO: update test to check specific API endpoint for material by Id.
     @Test
     public void retrieveMaterialDescriptionSuccess() throws Exception {
         logger.info("Running the JSON api access point test");
