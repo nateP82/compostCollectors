@@ -33,47 +33,39 @@
 ## Week 8 
 - [x] Refactoring based on project checkpoint feedback
 - [x] Review and reschedule project roadmap
-- [ ] Update reflection statement
 
 ## Week 9
 - [x] Edit profile view(v2)
-- [ ] Unit test coverage update(WIP) 
-- [ ] Update reflection statement
+- [x] Unit test coverage update(WIP) 
 
 ## Week 10
 - [x] Refactor based on project checkpoint feedback
 - [x] Create pickup schedule page(v2)
 - [x] Start work on pickup request form page(v2)
-- [ ] Start work on request form for a new or replacement compost bin(v2)
-- [ ] Update reflection statement
+- [x] Start work on request form for a new or replacement compost bin(v2)
 
 ## Week 11 
-- [ ] Create user contributions page(v2)
-- [ ] Update reflection statement
+- [x] Create user contributions page(v2)
 
 ## Week 12
 - [x] Create Acceptable materials page
-- [ ] Create Contact Us page
-- [ ] Unit test coverage update(WIP)
-- [ ] Update reflection statement
+- [x] Create Contact Us page
+- [x] Unit test coverage update(WIP)
 
 ## Week 13
 - [x] AWS deployment and checkpoint three requirements
-- [ ] Create About us page
+- [x] Create About us page(v2)
 - [x] Review and reschedule project roadmap
-- [ ] Update reflection statement
 
 ## Week 14
 - [x] Refactoring(WIP)
 - [x] Implement graph API for user contributions(v2)
 - [x] Individual project code review 2
-- [ ] Update reflection statement
 
 ## Week 15
 - [x] Refactoring and catch up
 - [x] Create profile view(v2)
 - [x] Create edit profile view(v2)
-- [ ] Update reflection statement
 
 ## Week 16
 - [ ] Wrap up individual project for presentation
