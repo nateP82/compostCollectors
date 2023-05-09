@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="head.jsp"/>
-<body>
+<body class="bg-body-secondary">
 <c:import url="navbar.jsp"/>
 <h2 class="text-center">Search Results: </h2>
 <table class="table table-striped">
@@ -21,8 +21,8 @@
       <td>User Name: ${user.userName}</td>
       <td>Email: ${user.email}</td>
       <td>Address: ${user.address}</td>
-      <td><a href="/compostcollectors_war/updateAccount.jsp">Edit</a></td>
-      <td><a href="/compostcollectors_war/viewReports.jsp">View Report Data</a></td>
+      <td><a href="updateAccount.jsp">Edit</a></td>
+      <td><a href="viewReports.jsp">View Report Data</a></td>
     </tr>
   </c:forEach>
 </table>

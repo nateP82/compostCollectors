@@ -9,19 +9,22 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="head.jsp"/>
-<body>
+<body class="bg-body-secondary">
 <c:import url="navbar.jsp"/>
 <h1 class="text-center">About Us</h1>
 <section>
 <p class="text-center">Compost Collectors was founded as a student project in 2023. The goals of the site are to:</p>
     <div class="d-flex justify-content-center">
-    <ul>
-        <li>Inform users about common composting practices</li>
-        <li>Provide information about compostible vs. non-compostible materials</li>
-        <li>Allow users to set up an account</li>
-        <li>Request a composting bin to get started</li>
-        <li>Scheduling services for compost pickup and removal</li>
-    </ul>
+        <ul>
+            <li>Inform users about common composting practices</li>
+            <li>Provide information about compostible vs. non-compostible materials</li>
+            <li>Allow users to set up an account</li>
+            <li>Request a composting bin to get started</li>
+            <li>Scheduling services for compost pickup and removal</li>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center">
+    <img src="images/AboutUsComposters1.jpg" alt="compost_bin_and_materials"/>
     </div>
 </section>
 </body>

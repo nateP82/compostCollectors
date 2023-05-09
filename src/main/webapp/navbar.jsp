@@ -8,7 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:import url="head.jsp" />
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-expand-lg navbar-light bg-body-secondary">
     <div class="container-fluid justify-content-end">
 <%--        Create Account is now v2 work--%>
 <%--    <a class="nav-link p-2" href="/compostcollectors_war/createAccount.jsp">Create A new Account</a>--%>

@@ -10,7 +10,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <c:import url="head.jsp"/>
-<body>
+<body class="bg-body-secondary">
 <c:import url="navbar.jsp"/>
 <h2 class="text-center">Compost Collectors</h2>
 <h3>

@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<footer class="footer">
+<footer class="footer bg-body-secondary">
     <div class="d-flex justify-content-between">
     <img src="images/mdi_compost.png" alt="recycle_logo">
         <div class="flex-column">
