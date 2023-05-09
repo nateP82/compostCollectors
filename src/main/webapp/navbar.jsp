@@ -15,6 +15,7 @@
 <%--    <a class="nav-link p-2" href="/compostcollectors_war/viewAccount.jsp">View your account</a>--%>
 <%--    Update Account is now labeled as v2 work--%>
 <%--    <a class="nav-link p-2" href="/compostcollectors_war/updateAccount.jsp">Update your account</a>--%>
+    <a class="nav-link p-2" href="index.jsp">Home</a>
     <a class="nav-link p-2" href="aboutUs.jsp">About Us</a>
     <a class="nav-link p-2" href="contactUs.jsp">Contact Us</a>
     <a class="nav-link p-2" href="materials.jsp">Accpeted Materials</a>
