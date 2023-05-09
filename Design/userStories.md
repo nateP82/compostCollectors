@@ -8,7 +8,7 @@ As an admin on the site, I want to be able to have elevated priviledges like upd
 As a new user to the compost collectors site, I want to be able to sign up for a new account to use the available services on the site. [MVP]
 
 ## Sign In
-As a registered user, I want to be able to successfully sign in/out of my account.[MVP]
+As a registered user, I want to be able to successfully sign in/out through the AWS cognito service.[MVP]
 
 ## View profile
 As a user, I want to be able to see my account information. [v2]
