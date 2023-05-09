@@ -50,5 +50,5 @@
 - [x] Form to submit a request for a compost bin
 
 ## Contact Us page
-- [ ] JSP with form submit functionality
-- [ ] Servlet for contact us page
+- [x] JSP with form submit functionality(v2)
+- [x] Servlet for contact us page(v2)

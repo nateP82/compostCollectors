@@ -24,7 +24,7 @@
         <label for="username">Email:</label>
         <input class="form-control" id="username"  name="username" type="text">
     </div>
-    <div class="form-floating">
+    <div class="form-floating mt-3">
         <textarea class="form-control" id="message" placeholder="Leave us a message" name="message" type="textarea"></textarea>
         <label for="message">Message:</label>
     </div>
