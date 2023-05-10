@@ -12,6 +12,9 @@ By signing up, users can take advantage of serveral features:
 - Request a pickup: If you missed a pickup you can submit a form to schedule an extra pickup
 - Find information about what can and cannot be composted
 
+## Video Presentation link 
+[Compost Collectors](https://www.youtube.com/watch?v=BGkvdL9pUkM&t=445s)
+
 ## Description
 
 ## Technologies
