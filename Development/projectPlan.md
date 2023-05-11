@@ -68,6 +68,5 @@
 - [x] Create edit profile view(v2)
 
 ## Week 16
-- [ ] Wrap up individual project for presentation
-- [ ] Update reflection statement
-- [ ] Final Self Evaluation
+- [x] Wrap up individual project for presentation
+- [x] Final Self Evaluation
